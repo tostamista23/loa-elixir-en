@@ -1,6 +1,7 @@
-Fork from icepeng/loa-calc, this repo is tranlated and maintained by me.
+Fork from icepeng/loa-calc, this repo is translate and maintained by me.
+<br>
 This Project includes image recognition features aimed at assisting players in crafting elixirs.
-![Alt Text](https://i.imgur.com/HMDG7MK.gif)
+![](https://github.com/tostamista23/loa-elixir-en/blob/main/chrome_bpZ6BzsTN9.gif)
 
 # LoaCalc
 
