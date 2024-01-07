@@ -1,0 +1,122 @@
+.effect {
+  display: flex;
+
+  gap: 12px;
+  align-items: center;
+}
+
+.effect-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.effect-name {
+  font-weight: bold;
+}
+
+.effect-value {
+  display: flex;
+}
+
+.effect-value-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 24px;
+  height: 24px;
+
+  &.is-filled {
+    background-color: #EADF90;
+    color: white;
+  }
+
+  &.yellow-bg {
+    background-color: rgb(252, 233, 92);
+  }
+
+  &.orange-bg {
+    background-color: #f59e0b;
+  }
+  
+  &.red-bg {
+    background-color: #ef4444;
+  }
+
+}
+
+.effect-value-square:nth-child(even) {
+  border-right:0 !important;
+}
+
+.effect-value-square:nth-child(odd) {
+  border-right:0 !important;
+}
+
+.effect-value-square:last-child {
+  border-right: 1px solid black !important;
+}
+
+.container {
+  display: flex;
+}
+
+.box {
+  flex: 1;
+}
+
+.empty-box {
+  height: 40px;
+  width:40px;
+}
+
+.mt--8{
+  margin-top: -8px;
+}
+
+.buttonEffect {
+  margin-bottom: 8px;
+  margin-top: 4px;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.div-cb-seal {
+  padding-left: 8px;
+  padding-top: 12px;
+}
+
+.cb-seal {
+  width: 26px;
+  text-align: center;
+}
+
+.mx-4{
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.mx-24{
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.mr-8{
+  margin-right: 8px;
+}
+
+.bg-green {
+  background-color: #3498db;
+  color:white
+}
+
+.bg-blue {
+  background-color: #e0e0e0;
+  color:white
+}
+
+.h-40{
+  height: 40px;
+}

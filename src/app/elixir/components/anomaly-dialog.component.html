@@ -1,0 +1,16 @@
+<h1 mat-dialog-title> Anomaly detected - Choose one of the following</h1>
+<div mat-dialog-content>
+  <div class="table">
+    <div
+      (click)="selectRow(data)"
+      class="row"
+      [class.selected]="data.id === selected?.id"
+      *ngFor="let data of dataSource"
+    >
+      <span [innerHTML]="data.desc"></span>
+    </div>
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button (click)="confirm()" color="primary" mat-flat-button>Continuar</button>
+</div>

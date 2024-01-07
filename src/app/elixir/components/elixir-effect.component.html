@@ -1,0 +1,43 @@
+<div>
+  <div class="effect-info">
+    <div class="container">
+      <div class="div-cb-seal">
+        <mat-checkbox [ngModel]="gameState.effects[index].isSealed" (ngModelChange)="setSealed.emit($event)" class="self-center cb-seal"></mat-checkbox>
+        <br>
+        Seal
+      </div>
+      <mat-form-field class="box mx-24">
+        <mat-select [(ngModel)]="gameState.effects[index].optionName">
+          <mat-option *ngFor="let option of effectOptions" [value]="option.name">
+            {{ option.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <div>
+        <button (click)="onFocusTarget($event)" mat-flat-button class="box buttonEffect mr-8 h-40" [ngClass]="isFocused ? 'bg-green' : 'bg-blue'">
+          <span>{{isFocused ? 'Focused' : 'Focus'}}</span>
+        </button>
+      </div>
+    </div>
+    <div class="effect-value">
+      <button class="mt--8" (click)="decrease.emit(index)" mat-icon-button>
+        <mat-icon>remove</mat-icon>
+      </button>
+      <div class="m-4 container">
+        <div class="effect-value-square box" *ngFor="let level of valueSquares; index as idx" (click)="setValue.emit(idx + 1)"
+          [ngClass]="{
+            'is-filled': effect.value > idx,
+            'yellow-bg': effect.value > 5 && effect.value > idx,
+            'orange-bg': effect.value > 7 && effect.value > idx,
+            'red-bg': effect.value === 10 && effect.value > idx
+          }"
+        >
+          <span>{{ level }}</span>
+        </div>
+      </div>
+      <button class="mt--8" (click)="increase.emit(index)" mat-icon-button>
+        <mat-icon>add</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>

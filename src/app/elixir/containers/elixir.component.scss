@@ -1,0 +1,46 @@
+.turn-center {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  place-content: center;
+}
+
+.font-size-16 {
+  font-size: 16px !important;
+}
+
+.recommend-reroll {
+  color: red;
+  font-weight: bold;
+}
+
+.m-0{
+  margin: 0px !important
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #3498db;
+  padding: 12px;
+  cursor: pointer;
+  transition: border 0.3s ease;
+}
+
+.image-container.drag-over {
+  border-color: #2ecc71;
+}
+
+.p-0 {
+  padding:0px
+}
+
+.image-container p {
+  margin: 0; /* Remove default margin */
+}
+
+.mt--6{
+  margin-top: -6px;
+}

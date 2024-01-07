@@ -1,0 +1,30 @@
+.description-container {
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 8px 0;
+}
+
+.lawful-power {
+  cursor: pointer;
+}
+
+.chaos-power {
+  cursor: pointer;
+}
+
+.diamond {
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  border: 1px solid black;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+
+  &.is-filled {
+    background-color: #3498db;
+    color: white;
+  }
+}

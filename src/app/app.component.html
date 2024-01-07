@@ -1,0 +1,29 @@
+<mat-toolbar class="navbar mat-elevation-z6" color="primary">
+  <a
+    routerLink="/"
+    routerLinkActive="nav-selected"
+    [routerLinkActiveOptions]="{ exact: true }"
+    mat-button
+    class="title"
+    >Lost Ark Elixir Helper</a
+  >
+  <div class="filler"></div>
+  <button class="menu" mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>format_color_fill</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="lightTheme()">Light</button>
+    <button mat-menu-item (click)="darkTheme()">Dark</button>
+  </mat-menu>
+  <a target="_blank" href="https://discord.gg/uCCp75c2aM" mat-button>Discord</a>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+    <mat-toolbar color="primary">
+      <div class="filler"></div>
+      <div class="mat-caption">Copyright © 2024 icepeng - Translated and Modified by TostaMista</div>
+      <div class="filler"></div>
+    </mat-toolbar>
+  </mat-sidenav-content>
+</mat-sidenav-container>

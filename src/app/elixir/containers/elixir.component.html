@@ -1,0 +1,112 @@
+<div class="container">
+  <div class="layout">
+    <h1 class="mat-h1">Elixir Assistant (Beta)</h1>  <h2>- The goal is to reach level 8 or higher</h2>
+    <mat-checkbox class="mb-12" [(ngModel)]="isDev">DEV Only</mat-checkbox>
+  </div>
+  <div class="row">
+    <div>
+      <div class="row">
+        <div class="">
+          <img src="assets/sages.jpg" />
+          <div class="row mt--6">
+            <div class="flex" *ngFor="let idx of [0, 1, 2]">
+              <app-elixir-sage
+              [gameState]="gameState"
+              [curveScores]="curveScores"
+              [adviceScores]="adviceScores"
+              [totalScores]="totalScores"
+              [index]="idx"
+              (changeCouncil)="setCouncil(idx, $event)"
+              (changeTypePower)="setTypePower(idx, $event)"
+              (setExhausted)="setSageExhausted(idx, $event)"
+            ></app-elixir-sage>
+            </div>
+          </div>
+        </div>
+
+
+
+        
+        <div>
+          <div class="effect-list ml-24">
+            <div class="layout content-center">
+              <mat-card class="enchant-area">
+                <mat-card-content>
+                  <img *ngIf="isDev && gameScreen.attemptsLeft.image" [src]="gameScreen.attemptsLeft.image">
+                  <div class="image-upload-container">
+                    <input #file type="file" (change)="onFileSelected($event)" accept="image/*" class="image-input" hidden>
+                  </div>
+                  <div class="turn-center font-size-16">
+                    Remaining steps
+                  </div>
+                  <div class="turn-center">
+                    <button (click)="decreaseTurnLeft()" mat-icon-button>
+                      <mat-icon>remove</mat-icon>
+                    </button>
+                    <h1 class="m-0">{{ gameState.turnLeft }}</h1>
+                    <button (click)="increaseTurnLeft()" mat-icon-button>
+                      <mat-icon>add</mat-icon>
+                    </button>
+                  </div>
+                </mat-card-content>
+              </mat-card>
+            </div>
+
+            <mat-card class="p-12" *ngFor="let effect of gameState.effects; index as i" [class.is-focused]="focusedIndices.includes(i)">
+              <mat-card-content>
+                <app-elixir-effect
+                  [gameState]="gameState"
+                  [pickRatios]="pickRatios"
+                  [luckyRatios]="luckyRatios"
+                  [index]="i"
+                  [isFocused]="focusedIndices.includes(i)"
+                  (focusTarget)="onFocusTarget($event)"
+                  (increase)="increaseEffectValue($event)"
+                  (decrease)="decreaseEffectValue($event)"
+                  (setValue)="setEffectValue(i, $event)"
+                  (setSealed)="setEffectSealed(i, $event)"
+                ></app-elixir-effect>
+              </mat-card-content>
+            </mat-card>
+            <div class="effect-list" *ngIf="isDev">
+              <mat-card
+                *ngFor="let sage of gameScreen.sages; index as i"
+              >
+                <mat-card-content style="display:flex">
+                  <img [src]="sage.image">
+                  <div *ngFor="let c of sage.children" class="">
+                    <img [src]="c.image">
+                  </div>
+                </mat-card-content>
+              </mat-card>
+      
+              <mat-card
+                *ngFor="let effe of gameScreen.effects; index as i"
+              >
+                <mat-card-content style="display:flex">
+                  <img [src]="effe.image">
+                  <div *ngFor="let c of effe.children" class="mr-8">
+                    <img [src]="c.image">
+                    <p>{{c.text}}</p>
+                  </div>
+                </mat-card-content>
+              </mat-card>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="w-100 p-24 pr-0 pt-0 align-center">
+      <mat-checkbox class="mb-12" [(ngModel)]="gameScreen.isForced"><b>WIP 21:9 Aspect Ratio </b>- only 16:0/21:9(43:9) supported (with and without black bars)</mat-checkbox>
+      <div class="box h-100">
+        <div (paste)="onPaste($event)" (dblclick)="file.click()" (dragover)="onDragOver($event)" (drop)="onDrop($event)" contenteditable="true" class="image-container">
+          <p>Press (CTRL + V), Double Click or <br>drag and drop an image</p>
+        </div>
+        <div class="image-upload-container">
+          <input #file type="file" (change)="onFileSelected($event)" accept="image/*" class="image-input" hidden>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

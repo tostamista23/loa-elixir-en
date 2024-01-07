@@ -1,0 +1,38 @@
+<mat-checkbox class="cb-center mb-12"
+  [ngModel]="sage.isExhausted"
+  (ngModelChange)="setExhausted.emit($event)"
+  >Exhaust</mat-checkbox
+>
+<ng-container *ngIf="!sage.isExhausted">
+  
+  <div class="power-container">
+    <div
+      *ngFor="let i of [1, 2, 3]"
+      class="lawful-power diamond"
+      [ngClass]="{ 'is-filled': (sage.type === 'lawful' && sage.power) >= i }"
+      (click)="setTypePower('lawful', i)"
+    ></div>
+  </div>
+  <div class="power-container">
+    <div
+      *ngFor="let i of [1, 2, 3, 4, 5, 6]"
+      class="chaos-power"
+      [ngClass]="{ 'is-filled': (sage.type === 'chaos' && sage.power) >= i }"
+      (click)="setTypePower('chaos', i)"
+    ></div>
+  </div>
+  <div class="description-container align-center" (click)="launchCouncilDialog(index)" [innerHTML]="description">
+  </div>
+  <div>
+    <div>Stack Score: {{ curveScore * 1000 | number : ".2-2" }}</div>
+    <div>
+      Advice Score {{ adviceScore * 10000 | number : ".2-2" }}
+    </div>
+    <div [class.is-highest]="isHighest">
+      Final Score: {{ totalScore * 1000 | number : ".2-2" }}
+    </div>
+  </div>
+  <ng-container *ngIf="sage.isExhausted">
+    <div>{{ description }}</div>
+  </ng-container>
+</ng-container>
