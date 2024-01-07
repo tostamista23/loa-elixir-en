@@ -1,3 +1,7 @@
+Fork from icepeng/loa-calc, this repo is tranlated and maintained by me.
+This Project includes image recognition features aimed at assisting players in crafting elixirs.
+https://i.imgur.com/HMDG7MK.gif
+
 # LoaCalc
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
