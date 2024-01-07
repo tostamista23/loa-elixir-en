@@ -22,7 +22,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "localize": ["en-US"],
             "outputPath": "dist/loa-calc",
             "index": "src/index.html",
             "main": "src/main.ts",
