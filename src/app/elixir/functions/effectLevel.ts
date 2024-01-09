@@ -8,7 +8,7 @@ export function  GetEffectLevelCoord(height: number, index: number, addToWidth =
         new Box(12, 12, 1698 + addToWidth, GetHeightByEffectIndex(height, index, 206)), //1
         new Box(12, 12, 1724 + addToWidth, GetHeightByEffectIndex(height, index, 206)), //empty
         new Box(12, 12, 1748 + addToWidth, GetHeightByEffectIndex(height, index, 206)), //
-        new Box(13, 12, 1769 + addToWidth, GetHeightByEffectIndex(height, index, 210)), //2
+        new Box(13, 12, 1769 + addToWidth, GetHeightByEffectIndex(height, index, 206)), //2
         new Box(12, 12, 1797 + addToWidth, GetHeightByEffectIndex(height, index, 208)), //empty
         new Box(12, 12, 1816 + addToWidth, GetHeightByEffectIndex(height, index, 210)), //3
         new Box(12, 12, 1844 + addToWidth, GetHeightByEffectIndex(height, index, 205)), //4

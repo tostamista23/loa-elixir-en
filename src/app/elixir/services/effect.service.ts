@@ -59,10 +59,10 @@ export class EffectService {
     
         // Define thresholds for purple, blue, and black
         const yellowThreshold = 150;
-        const redThreshold = 100;
+        const redThreshold = 75;
 
         // Define the specific color
-        const specific: [number, number, number] = [204, 201, 132];
+        const specific: [number, number, number] = [231, 219, 117];
         const specificDark: [number, number, number] = [118, 114, 68];
         const specificAmber: [number, number, number] = [252, 233, 41];
         const specificOrange: [number, number, number] = [223, 141, 41];

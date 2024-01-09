@@ -45,6 +45,10 @@ export class ScreenBox {
         if (this.attemptsLeft.text.startsWith('I')){
             this.attemptsLeft.text = this.attemptsLeft.text.replace("I", "1")
         }
+
+        if (this.attemptsLeft.text.startsWith('S')){
+            this.attemptsLeft.text = this.attemptsLeft.text.replace("S", "5")
+        }
     }
 
     updateToAspectRatio(){

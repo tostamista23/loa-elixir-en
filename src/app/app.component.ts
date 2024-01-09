@@ -1,10 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, Inject, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { Event, NavigationEnd, Router } from '@angular/router';
-import { Angulartics2GoogleGlobalSiteTag } from 'angulartics2';
-import { filter, map, pairwise, startWith } from 'rxjs';
-import { AlertDialogComponent } from './core/components/alert-dialog.component';
 import { MobileDialogComponent } from './core/components/mobile-dialog.component';
 
 @Component({
@@ -16,13 +12,7 @@ export class AppComponent implements OnInit {
   constructor(
     @Inject(DOCUMENT) private document: Document,
     private dialog: MatDialog,
-    router: Router,
-    angulartics2GoogleAnalytics: Angulartics2GoogleGlobalSiteTag
-  ) {
-    angulartics2GoogleAnalytics.startTracking();
-
-    router.navigate(['/elixir']);
-  }
+  ) {}
 
   ngOnInit() {
     const theme = localStorage.getItem('theme');

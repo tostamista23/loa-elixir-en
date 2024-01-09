@@ -1,5 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-@use "./app/home/containers/home.theme" as home;
 @import "~@angular/material/theming";
 @include mat-core();
 
@@ -40,12 +39,10 @@ $dark-app-theme: mat-dark-theme(
 
 @include angular-material-theme($light-app-theme);
 @include base-theme($light-app-theme);
-@include home.theme($light-app-theme);
 
 .dark-theme {
   @include angular-material-color($dark-app-theme);
   @include base-theme($dark-app-theme);
-  @include home.theme($dark-app-theme);
 }
 
 html,

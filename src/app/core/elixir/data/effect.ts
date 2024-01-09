@@ -71,7 +71,7 @@ export const effectOptions: readonly EffectOption[] = [
     ],
   },
   {
-    name: "Escape Expert",
+    name: "Master of Expert",
     optionDescriptions: [
       "Cooldown reduction of escape skills",
       "Cooldown reduction of escape skills +0.38%",
@@ -82,7 +82,7 @@ export const effectOptions: readonly EffectOption[] = [
     ],
   },
   {
-    name: "Evasion Expert",
+    name: "Master of Evasion",
     optionDescriptions: [
       "Cooldown reduction of movement skills",
       "Cooldown reduction of movement skills +0.38%",
@@ -257,7 +257,7 @@ export const effectOptions: readonly EffectOption[] = [
     ],
   },
   {
-    name: "March (Order)",
+    name: "Luminary (Order)",
     optionDescriptions: [
       "Party Attack Power buff based on own Attack Power",
       "Party Attack Power buff based on own Attack Power +0.64%",
@@ -312,7 +312,7 @@ export const effectOptions: readonly EffectOption[] = [
     ],
   },
   {
-    name: "Recovery Enhancement",
+    name: "Healing Enhancement",
     optionDescriptions: [
       "Recovery effect given to party members",
       "Recovery effect given to party members +0.67%",
@@ -477,7 +477,7 @@ export const effectOptions: readonly EffectOption[] = [
     ],
   },
   {
-    name: "March (Chaos)",
+    name: "Luminary (Chaos)",
     optionDescriptions: [
       "Damage to enemies",
       "Damage to enemies +0.23%",
@@ -499,7 +499,7 @@ export const effectOptions: readonly EffectOption[] = [
     ],
   },
   {
-    name: "March (Chaos)",
+    name: "Luminary (Chaos)",
     optionDescriptions: [
       "Party recovery and shield effect given",
       "Party recovery and shield effect given +0.23%",

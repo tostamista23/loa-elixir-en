@@ -338,20 +338,45 @@ function getCouncilDescription(state: GameState, sageIndex: number) {
 }
 
 function highlightHTML(input: string): string {
-  const goldColor = "style='color:#FFC107; font-weight: 500'";
+  const goldColor = "style='color:#eab308; font-weight: 500'";
   const redColor = "style='color:#FF5252; font-weight: 500'";
   const greenColor = "style='color:#4CAF50; font-weight: 500'";
 
   // Regular expression to find text between '<' and '>', excluding '<span>' tags
   const regex = /(<span\b[^>]*>.*?<\/span>|<[^>]+?>)|<|>/g;
 
+  const replacements: [RegExp, string][] = [
+    [/\b(up)\b/gi, greenColor],
+    [/\b(increased)\b/gi, greenColor],
+    [/\b(increase)\b/gi, greenColor],
+    [/\b(down)\b/gi, redColor],
+    [/\b(decreased)\b/gi, redColor],
+    [/\b(decrease)\b/gi, redColor],
+  ];
+
+  for (const [pattern, color] of replacements) {
+    input = input.replace(pattern, `<span ${color}>$1</span>`);
+  }
+  
   return input.replace(regex, (match) => {
     // If the match is within a <span> tag, do not highlight
     if (match.startsWith('<span')) {
       return match;
     }
 
+    
     match = match.replace("<", "").replace(">","");
+
+    // If the content contains the word "increase," highlight in green
+    if (/\bincrease\b/i.test(match)) {
+      return `<span ${greenColor}>${match}</span>`;
+    }
+
+    // If the content contains the word "decrease," highlight in red
+    if (/\bdecrease\b/i.test(match)) {
+      return `<span ${redColor}>${match}</span>`;
+    }
+
     // If the content between '<' and '>' is numeric, highlight in green
     if (/^[+]?\d+$/.test(match)) {
       return `<span ${greenColor}>${match}</span>`;

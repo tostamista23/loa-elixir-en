@@ -4,7 +4,7 @@ import { ElixirComponent } from './containers/elixir.component';
 
 const routes: Routes = [
   {
-    path: 'elixir',
+    path: '',
     component: ElixirComponent,
   }
 ];

@@ -124,21 +124,21 @@ export class ElixirComponent implements OnInit {
       return;
     }
 
-    const item = (event.clipboardData || event.originalEvent.clipboardData).items[0];
-
-    if (item.type.indexOf('image') !== -1) {
-      this.reset();
-
-      const blob = item.getAsFile();
-      const reader = new FileReader();
-
-      reader.onload = (e: any) => {
-        
-        this.insertImage(e.target.result);
-      };
-
-      reader.readAsDataURL(blob);
-      this.loadDetection(blob);
+    for (const item of (event.clipboardData || event.originalEvent.clipboardData).items) {
+      if (item.type.indexOf('image') !== -1) {
+        this.reset();
+  
+        const blob = item.getAsFile();
+        const reader = new FileReader();
+  
+        reader.onload = (e: any) => {
+          
+          this.insertImage(e.target.result);
+        };
+  
+        reader.readAsDataURL(blob);
+        this.loadDetection(blob);
+      }
     }
 
     this.markEventHandled(event);

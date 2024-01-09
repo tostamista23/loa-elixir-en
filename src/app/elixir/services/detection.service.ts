@@ -24,6 +24,7 @@ export class DetectionService {
         await this.sageService.updateSageStacks(screen, img);
         this.loadingService.setText("Reading Effects...");
         await this.effectService.updateLevelEffects(screen, img);
+        this.loadingService.setText("Updating UI...");
     }
 
     //Text to image sucks, if text is empty, darkers the image and trys to read again

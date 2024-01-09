@@ -115,7 +115,7 @@ export class Box {
             ["But, will", "But, I will"],
             ["attempts,", "attempts."],
             ["by 3% ", "by 5% "], //3% doesnt exist
-            ["Il ", "I'll "], //3% doesnt exist
+            ["Il ", "I'll "],
             ["rate of ll effects", "rate of all effects"],
             ["loss", "less"],
             ["increase I random", "increase 1 random"],
@@ -128,7 +128,14 @@ export class Box {
             ["Its ", "It's "],
             ["Teffect", "1 effect"],
             ["level by level", "level by 1 level"],
-            ["Tcan ","I can "]
+            ["Tcan ","I can "],
+            ["enhance I effect", "enhance 1 effect"],
+            ["[-2- +2]", "[-2 - +2]"],
+            ["oy 14-45)", "[-4-+5]"],
+            ["poe. ", "power. "],
+            ["poe ", "power "],
+            ["power But,","power. But,"],
+            ["selected [","selected by ["]
         ];
 
         for (const [pattern, replacement] of toReplace) {
@@ -145,6 +152,10 @@ export class Box {
 
         if (this.text.endsWith("’")){
             this.text = this.text.replace("’","")
+        }
+
+        if (this.text.endsWith(",")){
+            this.text = this.text.replace(",",".")
         }
 
         if (this.text.endsWith("down | ll")){

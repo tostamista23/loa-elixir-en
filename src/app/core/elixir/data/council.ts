@@ -519,7 +519,7 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "In all remaining conversions, the probability of the effect <you choose> being converted will increase by <5>%.,,,",
+      "I will increase the transmutation rate of the effect <you selected> by <5>% for all remaining transmutations.",
       "For all remaining conversions, I will increase the probability of the effect <you selected> being converted by <5>%.,,,,",
       "In all remaining conversions, we will increase the probability of <your chosen> effect being converted by <5>%.,,,,"
     ],
@@ -701,7 +701,7 @@ export const councils: readonly Council[] = [
     descriptions: [
       "In all remaining conversions, the probability of the effect <you choose> being converted will be increased by <10>%.",
       "For all remaining conversions, I will increase the probability of the effect <you selected> being converted by <10>%.",
-      "In all remaining conversions, we will increase the probability of the <your chosen> effect being converted by <10>%."
+      "I will decrease the transmutation rate of the effect <you selected> by <10>% for all remaining transmutations."
     ],
     slotType: 3,
     type: "common",
@@ -1449,7 +1449,7 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "This time, I will create the <{0}> effect.",
+      "This time, I will transmute the <{0}> effect.",
       "This time, I will enhance the <{0}> effect.",
       "This time, I'll transmute the <{0}> effect."
     ],
@@ -1479,7 +1479,7 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "This time, I will create the <{1}> effect.",
+      "This time, I will transmute the <{1}> effect.",
       "This time, I will enhance the <{1}> effect.",
       "This time, I'll transmute the <{1}> effect."
     ],
@@ -1509,7 +1509,7 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "This time, I will create the <{2}> effect.",
+      "This time, I will transmute the <{2> effect.",
       "This time, I will enhance the <{2}> effect.",
       "This time, I'll transmute the <{2}> effect."
     ],
@@ -1539,7 +1539,7 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "This time, I will create the <{3}> effect.",
+      "This time, I will transmute the <{3}> effect.",
       "This time, I will enhance the <{3}> effect.",
       "This time, I'll transmute the <{3}> effect."
     ],
@@ -1569,7 +1569,7 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "This time, I will create the <{4}> effect.",
+      "This time, I will transmute the <{4}> effect.",
       "This time, I will enhance the <{4}> effect.",
       "This time, I'll transmute the <{4}> effect."
     ],
@@ -2867,7 +2867,7 @@ export const councils: readonly Council[] = [
     descriptions: [
       "I'll increase the level of the <{0}> effect by [<-2> to <+2>].",
       "I'll increase the level of the <{0}> effect by one value between [<-2> to <+2>].",
-      "Let me increase the level of the <{0}> effect by [<-2> to <+2>]."
+      "Let me increase the level of the <{0}> effect by [<-2> - <+2>]."
     ],
     slotType: 3,
     type: "common",
@@ -3046,7 +3046,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I'll increase the level of the <{0}> effect by <1>. It will have a <25>% chance of success.",
-      "I will increase the level of the <{0}> effect <1>. The success rate is will be <25>%.",
+      "I will increase the level of the <{0}> effect by <1>. The success rate will be <25>%.",
       "I'll increase the level of the <{0}> effect by <1>. It has a <25>% of succeeding."
     ],
     slotType: 3,
@@ -3076,7 +3076,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I'll increase the level of the <{1}> effect by <1>. It will have a <25>% chance of success.",
-      "I will increase the level of the <{1}> effect <1>. The success rate is will be <25>%.",
+      "I will increase the level of the <{1}> effect by <1>. The success rate will be <25>%.",
       "I'll increase the level of the <{1}> effect by <1>. It has a <25>% of succeeding."
     ],
     slotType: 3,
@@ -3106,7 +3106,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I'll increase the level of the <{2}> effect by <1>. It will have a <25>% chance of success.",
-      "I will increase the level of the <{2}> effect <1>. The success rate is will be <25>%.",
+      "I will increase the level of the <{2}> effect by <1>. The success rate will be <25>%.",
       "I'll increase the level of the <{2}> effect by <1>. It has a <25>% of succeeding."
     ],
     slotType: 3,
@@ -3136,7 +3136,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I'll increase the level of the <{3}> effect by <1>. It will have a <25>% chance of success.",
-      "I will increase the level of the <{3}> effect <1>. The success rate is will be <25>%.",
+      "I will increase the level of the <{3}> effect by <1>. The success rate will be <25>%.",
       "I'll increase the level of the <{3}> effect by <1>. It has a <25>% of succeeding."
     ],
     slotType: 3,
@@ -3166,7 +3166,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I'll increase the level of the <{4}> effect by <1>. It will have a <25>% chance of success.",
-      "I will increase the level of the <{4}> effect <1>. The success rate is will be <25>%.",
+      "I will increase the level of the <{4}> effect by <1>. The success rate will be <25>%.",
       "I'll increase the level of the <{4}> effect by <1>. It has a <25>% of succeeding."
     ],
     slotType: 3,
@@ -3196,7 +3196,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I'll increase the level of the effect <you selected> effect by <1>. It will have a <25>% chance of success.",
-      "I will raise the level of the effect <you selected> by <1>. The success rate is <25>%.,,,",
+      "I will increase the level of the effect <you chose> by <1>. The success rate will be <25>%.",
       "I'll increase the level of the <selected> effect by <1>. It has a <25>% of succeeding."
     ],
     slotType: 3,
@@ -3226,8 +3226,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I'll increase the level of the <{0}> effect by <1>. It will have a <50>% chance of success.",
-      "I will increase the level of the <{0}> effect <1>. The success rate is will be <50>%.",
-      "Let's raise the level of the <{0}> effect by <1>. The probability of success is <50>%.,,,"
+      "I will increase the level of the <{0}> effect by <1>. The success rate will be <50>%.",
+      "I'll increase the level of the <{0}> effect by 1. It has a <50>% of succeeding."
     ],
     slotType: 3,
     type: "common",
@@ -3256,8 +3256,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I'll increase the level of the <{1}> effect by <1>. It will have a <50>% chance of success.",
-      "I will increase the level of the <{1}> effect <1>. The success rate is will be <50>%.",
-      "Let's raise the level of the <{1}> effect by <1>. The probability of success is <50>%."
+      "I will increase the level of the <{1}> effect by <1>. The success rate will be <50>%.",
+      "I'll increase the level of the <{1}> effect by 1. It has a <50>% of succeeding."
     ],
     slotType: 3,
     type: "common",
@@ -3286,8 +3286,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I'll increase the level of the <{2}> effect by <1>. It will have a <50>% chance of success.",
-      "I will increase the level of the <{2}> effect <1>. The success rate is will be <50>%.",
-      "Let's raise the level of the <{2}> effect by <1>. The probability of success is <50>%."
+      "I will increase the level of the <{2}> effect by <1>. The success rate will be <50>%.",
+      "I'll increase the level of the <{2}> effect by 1. It has a <50>% of succeeding."
     ],
     slotType: 3,
     type: "common",
@@ -3316,8 +3316,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I'll increase the level of the <{3}> effect by <1>. It will have a <50>% chance of success.",
-      "I will increase the level of the <{3}> effect <1>. The success rate is will be <50>%.",
-      "Let's raise the level of the <{3}> effect by <1>. The probability of success is <50>%."
+      "I will increase the level of the <{3}> effect by <1>. The success rate will be <50>%.",
+      "I'll increase the level of the <{3}> effect by 1. It has a <50>% of succeeding."
     ],
     slotType: 3,
     type: "common",
@@ -3346,8 +3346,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I'll increase the level of the <{4}> effect by <1>. It will have a <50>% chance of success.",
-      "I will increase the level of the <{4}> effect <1>. The success rate is will be <50>%.",
-      "Let's raise the level of the <{4}> effect by <1>. The probability of success is <50>%."
+      "I will increase the level of the <{4}> effect by <1>. The success rate will be <50>%.",
+      "I'll increase the level of the <{4}> effect by 1. It has a <50>% of succeeding."
     ],
     slotType: 3,
     type: "common",
@@ -3407,7 +3407,7 @@ export const councils: readonly Council[] = [
     descriptions: [
       "I will increase a <random> effect by 1 level. Let's see which effect it will be.",
       "I will increase 1 <random> effect by <1> level.",
-      "<Random Effect> I'll raise it <1> level."
+      "I'll increase 1 <random> effect by <1> level."
     ],
     slotType: 3,
     type: "common",
@@ -6795,7 +6795,7 @@ export const councils: readonly Council[] = [
       6
     ],
     descriptions: [
-      "<lowest level> effect raises <1> levels by <1>. But <1> <other> effects will go down <2> levels.",
+      "I'll enhance 1 effect with the lowest level by 1 level. In exchange, however, theone with the highest level will lose 2 levels.",
       "<Lowest level> Effect <1> level will be increased by <1>. However, the <1> level of <other> effects will be reduced by <2>.",
       "<lowest level> I will raise the effect <1> level by <1>. <Other> effects <1> steps will be reduced by <2>, though."
     ],
@@ -7612,7 +7612,7 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "You won't need to pay for this training.,,,",
+      "You will not have to pay for this creation.",
       "You won't need to pay involved in this training.,,,,",
       "You won't need to pay for this creation."
     ],
