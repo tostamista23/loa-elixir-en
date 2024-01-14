@@ -90,6 +90,10 @@ export class ElixirComponent implements OnInit {
     return false;
   }
 
+  isMaxValue(value: number): boolean {
+    return Math.max(...this.totalScores) === value;
+  }
+
   get recommendRerollLawfulSeal() {
     if (!GameState.query.checkSealNeeded(this.gameState)) {
       return false;

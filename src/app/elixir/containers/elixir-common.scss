@@ -83,6 +83,10 @@
   box-sizing: border-box;
   padding: 10px; /* Optional: Add padding or other styles as needed */
   border: 1px solid #ccc;
+
+  &.isHighest {
+    border-color: #3f51b5 !important;
+  }
 }
 
 .pr-0{
