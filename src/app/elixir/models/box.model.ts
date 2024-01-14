@@ -135,7 +135,10 @@ export class Box {
             ["poe. ", "power. "],
             ["poe ", "power "],
             ["power But,","power. But,"],
-            ["selected [","selected by ["]
+            ["selected [","selected by ["],
+            ["+2)", "+2]"],
+            ["2- +", "2 - +"],
+            ["mn ete ", "I'll change "]
         ];
 
         for (const [pattern, replacement] of toReplace) {
