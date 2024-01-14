@@ -2625,9 +2625,9 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "I will increase the great success rate of <all> effects by <5>% for all remaining transmutation.",
-      "I will increase the great success rate of <all> effects by <5>% for all remaining transmutation.",
-      "I will increase the great success rate of <all> effects by <5>% for all remaining transmutation.",
+      "I will increase the great success rate of <all> effects by <5>% for all remaining transmutations.",
+      "I will increase the great success rate of <all> effects by <5>% for all remaining transmutations.",
+      "I will increase the great success rate of <all> effects by <5>% for all remaining transmutations.",
     ],
     slotType: 3,
     type: "common",
@@ -2655,9 +2655,9 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "I will increase the great success rate of <all> effects by <10>% for all remaining transmutation.",
-      "I will increase the great success rate of <all> effects by <10>% for all remaining transmutation.",
-      "I will increase the great success rate of <all> effects by <10>% for all remaining transmutation.",
+      "I will increase the great success rate of <all> effects by <10>% for all remaining transmutations.",
+      "I will increase the great success rate of <all> effects by <10>% for all remaining transmutations.",
+      "I will increase the great success rate of <all> effects by <10>% for all remaining transmutations.",
     ],
     slotType: 3,
     type: "common",
