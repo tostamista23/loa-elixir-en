@@ -34,7 +34,7 @@ function setOptionName(effect: Effect, optionName: string): Effect {
 
 function seal(effect: Effect): Effect {
   if (effect.isSealed) {
-    throw new Error("Effect is already sealed");
+    //throw new Error("Effect is already sealed");
   }
 
   return {
