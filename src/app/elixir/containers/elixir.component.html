@@ -1,7 +1,7 @@
 <div class="container">
   <div class="layout mb-0">
     <h1 class="mat-h1">Elixir Assistant (Beta)</h1>  <h2> - The goal is to reach level 8 or higher</h2>
-    <mat-checkbox class="mb-12" [(ngModel)]="isDev">DEV Only</mat-checkbox>
+    <!--<mat-checkbox class="mb-12" [(ngModel)]="isDev">DEV Only</mat-checkbox>-->
   </div>
   <div class="row">
     <div>
@@ -29,7 +29,7 @@
         
         <div>
           <div class="effect-list ml-24">
-            <div class="layout content-center">
+            <div class="layout content-center mb-0">
               <mat-card class="enchant-area">
                 <mat-card-content>
                   <img *ngIf="isDev && gameScreen.attemptsLeft.image" [src]="gameScreen.attemptsLeft.image">
@@ -49,7 +49,7 @@
                     </button>
                   </div>
                   <div class="align-center" [class.recommend-reroll]="recommendRerollBaseline">
-                    Optimal rerolling is suggested when the highest advice score is 
+                    Reroll recommended when the highest advice score is
                     <b>{{ baselineScore * 10000 | number : ".2" }}</b>
                     or lower
                   </div>
@@ -103,7 +103,7 @@
       
     </div>
     <div class="w-100 p-24 pr-0 pt-0 align-center">
-      <mat-checkbox class="mb-12" [(ngModel)]="gameScreen.isForced"><b>WIP Force 21:9 Aspect Ratio </b>- only 16:0/21:9(43:9) supported (with and without black bars)</mat-checkbox>
+      <mat-checkbox class="mb-12" [(ngModel)]="gameScreen.isForced"><b>Force 21:9 Aspect Ratio (black bars)</b></mat-checkbox>
       <div class="box h-100">
         <div (paste)="onPaste($event)" (dblclick)="file.click()" (dragover)="onDragOver($event)" (drop)="onDrop($event)" contenteditable="true" class="image-container">
           <p>Press (CTRL + V), Double Click or <br>drag and drop an image</p>

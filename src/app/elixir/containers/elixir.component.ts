@@ -3,7 +3,6 @@ import { MatDialog } from '@angular/material/dialog';
 import {
   api,
   Council,
-  CouncilType,
   data,
   GameState,
   Sage,
@@ -289,15 +288,17 @@ export class ElixirComponent implements OnInit {
     });
 
       box.replacesSages();
-      let result = list.filter((x) => x.desc.length > 8 && x.desc.toLocaleLowerCase().includes(box.text?.toLocaleLowerCase()));
+      let result = list.filter((x) => x.desc.length > 8 && x.desc.toLocaleLowerCase() == box.text?.toLocaleLowerCase());
 
       if (result.length === 0){
         console.log(box.text);
-        console.log(list.filter(x => x.id == "SYHl4YT5"));
-        alert(box.text + " not found")
+        console.log(list.filter(x => x.id == "bg2DjkX7"));
+        alert("Sage Option: " + box.text + " not found pls contact tostamista (discord)")
         return
       }else if (box.text && result.length !== 1 && result.length <= 10) {
+        console.log(box.text);
         this.AnomalyDialog(index, result)
+        return;
       }
 
       this.updateCouncil(index, result[0].id, result[0].canExhaust);
@@ -312,7 +313,7 @@ export class ElixirComponent implements OnInit {
 
       let result = data.effectOptions.find((x) => x.name.toLocaleLowerCase() == box.text.toLocaleLowerCase());
     
-      !result ? console.warn(box.text) : this.gameState.effects[index].optionName = result.name
+      !result ? alert("Effect Option: " + box.text + " not found pls contact tostamista (discord)") : this.gameState.effects[index].optionName = result.name
 
       this.setEffectValue(index ,box.value)
 
