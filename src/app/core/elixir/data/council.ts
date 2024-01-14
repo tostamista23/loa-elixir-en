@@ -1450,7 +1450,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "This time, I will transmute the <{0}> effect.",
-      "This time, I will transmute the <{0}> effect.",
+      "This time, I will enhance the <{0}> effect.",
       "This time, I'll transmute the <{0}> effect."
     ],
     slotType: 3,
@@ -1480,7 +1480,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "This time, I will transmute the <{1}> effect.",
-      "This time, I will transmute the <{1}> effect.",
+      "This time, I will enhance the <{1}> effect.",
       "This time, I'll transmute the <{1}> effect."
     ],
     slotType: 3,
@@ -1510,7 +1510,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "This time, I will transmute the <{2> effect.",
-      "This time, I will transmute the <{2}> effect.",
+      "This time, I will enhance the <{2}> effect.",
       "This time, I'll transmute the <{2}> effect."
     ],
     slotType: 3,
@@ -1540,7 +1540,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "This time, I will transmute the <{3}> effect.",
-      "This time, I will transmute the <{3}> effect.",
+      "This time, I will enhance the <{3}> effect.",
       "This time, I'll transmute the <{3}> effect."
     ],
     slotType: 3,
@@ -1570,7 +1570,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "This time, I will transmute the <{4}> effect.",
-      "This time, I will transmute the <{4}> effect.",
+      "This time, I will enhance the <{4}> effect.",
       "This time, I'll transmute the <{4}> effect."
     ],
     slotType: 3,
@@ -1631,7 +1631,7 @@ export const councils: readonly Council[] = [
     descriptions: [
       "This time, I can enhance the <{0}> effect by <2> levels, but at the cost of <2> of your remaining attempts.",
       "This time, I will enhance the <{0}> effect by <2> levels, but at the cost of <2> of your remaining attempts.",
-      "This time, I'll enhance the <{0}> effect by <2> levels, but at the cost of <2> of your remaining attempts."
+      "I will transmute the <{0}> effect by <2> levels. But it will consume <2> attempts."
     ],
     slotType: 3,
     type: "common",
@@ -1673,7 +1673,7 @@ export const councils: readonly Council[] = [
     descriptions: [
       "This time, I can enhance the <{1}> effect by <2> levels, but at the cost of <2> of your remaining attempts.",
       "This time, I will enhance the <{1}> effect by <2> levels, but at the cost of <2> of your remaining attempts.",
-      "This time, I'll enhance the <{1}> effect by <2> levels, but at the cost of <2> of your remaining attempts."
+      "I will transmute the <{1}> effect by <2> levels. But it will consume <2> attempts."
     ],
     slotType: 3,
     type: "common",
@@ -1715,7 +1715,7 @@ export const councils: readonly Council[] = [
     descriptions: [
       "This time, I can enhance the <{2}> effect by <2> levels, but at the cost of <2> of your remaining attempts.",
       "This time, I will enhance the <{2}> effect by <2> levels, but at the cost of <2> of your remaining attempts.",
-      "This time, I'll enhance the <{2}> effect by <2> levels, but at the cost of <2> of your remaining attempts.",
+      "I will transmute the <{2}> effect by <2> levels. But it will consume <2> attempts."
     ],
     slotType: 3,
     type: "common",
@@ -1757,7 +1757,7 @@ export const councils: readonly Council[] = [
     descriptions: [
       "This time, I can enhance the <{3}> effect by <2> levels, but at the cost of <2> of your remaining attempts.",
       "This time, I will enhance the <{3}> effect by <2> levels, but at the cost of <2> of your remaining attempts.",
-      "This time, I'll enhance the <{3}> effect by <2> levels, but at the cost of <2> of your remaining attempts.",
+      "I will transmute the <{3}> effect by <2> levels. But it will consume <2> attempts."
     ],
     slotType: 3,
     type: "common",
@@ -1799,7 +1799,7 @@ export const councils: readonly Council[] = [
     descriptions: [
       "This time, I can enhance the <{4}> effect by <2> levels, but at the cost of <2> of your remaining attempts.",
       "This time, I will enhance the <{4}> effect by <2> levels, but at the cost of <2> of your remaining attempts.",
-      "This time, I'll enhance the <{4}> effect by <2> levels, but at the cost of <2> of your remaining attempts.",
+      "I will transmute the <{4}> effect by <2> levels. But it will consume <2> attempts."
     ],
     slotType: 3,
     type: "common",
@@ -1841,7 +1841,7 @@ export const councils: readonly Council[] = [
     descriptions: [
       "This time, I can enhance the <selected> effect by <2> levels, but at the cost of <2> of your remaining attempts.",
       "This time, I will enhance the effect <you selected> effect by <2> levels, but at the cost of <2> of your remaining attempts.",
-      "This time, I'll enhance the effect <you selected> effect by <2> levels, but at the cost of <2> of your remaining attempts."
+      "I will transmute the effect <you chose> by <2> levels. But it will consume <2> attempts."
     ],
     slotType: 3,
     type: "common",
@@ -1911,9 +1911,9 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "The effect created this time will go up <3> levels. But it will consume <2> attempts.",
-      "The effect created this time will go up <3> levels. But it will consume <2> attempts.",
-      "The effect created this time will go up <3> levels. But it will consume <2> attempts."
+      "The effect transmuted this time will increase by <3> levels. But it will consume <2> attempts.",
+      "The effect transmuted will increase by <3>. However, <2> transmutation attempts will be consumed.",
+      "The effect transmuted this time will increase by <3> levels. But it will consume <2> attempts."
     ],
     slotType: 3,
     type: "common",
@@ -1983,9 +1983,9 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "This time, I will transmute 3 effects at the same time. But it will consume 2 attempts.",
-      "This time, I will transmute 3 effects at the same time. But it will consume 2 attempts.",
-      "This time, I will transmute 3 effects at the same time. But it will consume 2 attempts."
+      "This time, I will transmute <3> effects at the same time. But it will consume 2 attempts.",
+      "This time, I will transmute <3> effects. But it will consume 2 attempts.",
+      "This time, I will transmute >3> effects at the same time. But it will consume 2 attempts."
     ],
     slotType: 3,
     type: "common",
@@ -2687,7 +2687,7 @@ export const councils: readonly Council[] = [
     descriptions: [
       "I'll Increase the level of the <{0}> effect by [<-1> - <+2>].",
       "I'll increase the level of the <{0}> effect by one value between [<-1> - <+2>].",
-      "I will increase the level of the <{0}> effect by [<-1> - <+2>]."
+      "Let me increase the level of the <{0}> effect by [<-1> - <+2>]."
     ],
     slotType: 3,
     type: "common",
@@ -2717,7 +2717,7 @@ export const councils: readonly Council[] = [
     descriptions: [
       "I'll Increase the level of the <{1}> effect by [<-1> - <+2>].",
       "I'll increase the level of the <{1}> effect by one value between [<-1> to <+2>].",
-      "I will increase the level of the <{1}> effect by [<-1> to <+2>]."
+      "Let me increase the level of the <{1}> effect by [<-1> - <+2>]."
     ],
     slotType: 3,
     type: "common",
@@ -2747,7 +2747,7 @@ export const councils: readonly Council[] = [
     descriptions: [
       "I'll Increase the level of the <{2}> effect by [<-1> - <+2>].",
       "I'll increase the level of the <{2}> effect by one value between [<-1> to <+2>].",
-      "I will increase the level of the <{2}> effect by [<-1> to <+2>]."
+      "Let me increase the level of the <{2}> effect by [<-1> - <+2>]."
     ],
     slotType: 3,
     type: "common",
@@ -2777,7 +2777,7 @@ export const councils: readonly Council[] = [
     descriptions: [
       "I'll Increase the level of the <{3}> effect by [<-1> - <+2>].",
       "I'll increase the level of the <{3}> effect by one value between [<-1> to <+2>].",
-      "I will increase the level of the <{3}> effect by [<-1> to <+2>]."
+      "Let me increase the level of the <{3}> effect by [<-1> - <+2>]."
     ],
     slotType: 3,
     type: "common",
@@ -2807,7 +2807,7 @@ export const councils: readonly Council[] = [
     descriptions: [
       "I'll Increase the level of the <{4}> effect by [<-1> - <+2>].",
       "I'll increase the level of the <{4}> effect by one value between [<-1> to <+2>].",
-      "I will increase the level of the <{4}> effect by [<-1> to <+2>]."
+      "Let me increase the level of the <{4}> effect by [<-1> - <+2>]."
     ],
     slotType: 3,
     type: "common",
@@ -2836,8 +2836,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I'll increase the level of the effect <you selected> by [<-1> - <+2>].",
-      "I'll increase the level of the effect <of your choice> by one value between [<-1> - <+2>].",
-      "I will increase the level of the effect <you chose> by [<-1> - <+2>]."
+      "I'll increase the level of the effect <you chose> by one value between [<-1> - <+2>].",
+      "Let me increase the level of the effect <you selected> by [<-1> - <+2>]."
     ],
     slotType: 3,
     type: "common",
@@ -2867,7 +2867,7 @@ export const councils: readonly Council[] = [
     descriptions: [
       "I'll increase the level of the <{0}> effect by [<-2> - <+2>].",
       "I'll increase the level of the <{0}> effect by one value between [<-2> - <+2>].",
-      "I will increase the level of the <{0}> effect by [<-2> to <+2>]."
+      "Let me increase the level of the <{0}> effect by [<-2> - <+2>]."
     ],
     slotType: 3,
     type: "common",
@@ -2897,7 +2897,7 @@ export const councils: readonly Council[] = [
     descriptions: [
       "I'll increase the level of the <{1}> effect by [<-2> - <+2>].",
       "I'll increase the level of the <{1}> effect by one value between [<-2> - <+2>].",
-      "I will increase the level of the <{1}> effect by [<-2> to <+2>]."
+      "Let me increase the level of the <{1}> effect by [<-2> - <+2>]."
     ],
     slotType: 3,
     type: "common",
@@ -2927,7 +2927,7 @@ export const councils: readonly Council[] = [
     descriptions: [
       "I'll increase the level of the <{2}> effect by [<-2> - <+2>].",
       "I'll increase the level of the <{2}> effect by one value between [<-2> - <+2>].",
-      "I will increase the level of the <{2}> effect by [<-2> to <+2>]."
+      "Let me increase the level of the <{2}> effect by [<-2> - <+2>]."
     ],
     slotType: 3,
     type: "common",
@@ -2957,7 +2957,7 @@ export const councils: readonly Council[] = [
     descriptions: [
       "I'll increase the level of the <{3}> effect by [<-2> - <+2>].",
       "I'll increase the level of the <{3}> effect by one value between [<-2> - <+2>].",
-      "I will increase the level of the <{3}> effect by [<-2> to <+2>]."
+      "Let me increase the level of the <{3}> effect by [<-2> - <+2>]."
     ],
     slotType: 3,
     type: "common",
@@ -2987,7 +2987,7 @@ export const councils: readonly Council[] = [
     descriptions: [
       "I'll increase the level of the <{4}> effect by [<-2> - <+2>].",
       "I'll increase the level of the <{4}> effect by one value between [<-2> - <+2>].",
-      "I will increase the level of the <{4}> effect by [<-2> to <+2>]."
+      "Let me increase the level of the <{4}> effect by [<-2> - <+2>]."
     ],
     slotType: 3,
     type: "common",
@@ -3016,8 +3016,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I'll increase the level of the effect <you selected> by [<-2> - <+2>].",
-      "I'll raise the level of the effect <of your choice> by one value between [<-2> - <+2>].,,,",
-      "I will increase the level of the effect <you chose> by [<-2> - <+2>]."
+      "I'll increase the level of the effect <you chose> by one value between [<-2> - <+2>].",
+      "Let me increase the level of the effect <you selected> by [<-2> - <+2>]."
     ],
     slotType: 3,
     type: "common",
@@ -3377,7 +3377,7 @@ export const councils: readonly Council[] = [
     descriptions: [
       "I'll increase the level of the effect <you selected> effect by <1>. It will have a <50>% chance of success.",
       "I will increase the level of the effect <you chose> by <1>. The success rate will be <50>%.",
-      "Let’s raise the level of the effect <you chose> by <1>. The probability of success is <50>%."
+      "I'll increase the level of the <selected> effect by <1>. It has a <50>% of succeeding."
     ],
     slotType: 3,
     type: "common",
@@ -3405,9 +3405,9 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "I will increase a <random> effect by 1 level. Let's see which effect it will be.",
-      "I will increase 1 <random> effect by <1> level.",
-      "I'll increase 1 <random> effect by <1> level."
+      "I will increase a <random> effect by <1> level. Let's see which effect it will be.",
+      "I will increase <1> <random> effect by <1> level.",
+      "I'll increase <1> <random> effect by <1> level."
     ],
     slotType: 3,
     type: "common",
@@ -5715,9 +5715,9 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "I will swap the levels of <1> effect with the <highest level> and <1> effect with the <lowest level>.",
-      "I will swap the levels of <1> effect with the <highest level> and <1> effect with the <lowest level>.",
-      "I will swap the levels of <1> effect with the <highest level> and <1> effect with the <lowest level>.",
+      "I will switch the levels of <1> effect with the <highest level> and <1> effect with the <lowest level>.",
+      "I will switch the levels of <1> effect with the <highest level> and <1> effect with the <lowest level>.",
+      "I will switch the levels of <1> effect with the <highest level> and <1> effect with the <lowest level>.",
     ],
     slotType: 3,
     type: "common",
@@ -6076,7 +6076,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I will consume <1> level of the <{0}> effect. In Exchange for that, I will swap the levels of the <{0}> effect and the <{1}> effect.",
-      "It will consume <1> level of the <{0}> effect. Instead, I will swap the levels of the <{0}> effect and the <{1}> effect.",
+      "I will consume <1> level of the <{0}> effect. In Exchange for that, I will swap the levels of the <{0}> effect and the <{1}> effect.",
       "I will consume <1> level of the <{0}> effect. In Exchange for that, I will swap the levels of the <{0}> effect and the <{1}> effect."
     ],
     slotType: 3,
@@ -6106,7 +6106,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I will consume <1> level of the <{0}> effect. In Exchange for that, I will swap the levels of the <{0}> effect and the <{2}> effect.",
-      "It will consume <1> level of the <{0}> effect. Instead, I will swap the levels of the <{0}> effect and the <{2}> effect.",
+      "I will consume <1> level of the <{0}> effect. In Exchange for that, I will swap the levels of the <{0}> effect and the <{2}> effect.",
       "I will consume <1> level of the <{0}> effect. In Exchange for that, I will swap the levels of the <{0}> effect and the <{2}> effect."
     ],
     slotType: 3,
@@ -6136,7 +6136,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I will consume <1> level of the <{0}> effect. In Exchange for that, I will swap the levels of the <{0}> effect and the <{3}> effect.",
-      "It will consume <1> level of the <{0}> effect. Instead, I will swap the levels of the <{0}> effect and the <{3}> effect.",
+      "I will consume <1> level of the <{0}> effect. In Exchange for that, I will swap the levels of the <{0}> effect and the <{3}> effect.",
       "I will consume <1> level of the <{0}> effect. In Exchange for that, I will swap the levels of the <{0}> effect and the <{3}> effect."
     ],
     slotType: 3,
@@ -6166,7 +6166,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I will consume <1> level of the <{0}> effect. In Exchange for that, I will swap the levels of the <{0}> effect and the <{4}> effect.",
-      "It will consume <1> level of the <{0}> effect. Instead, I will swap the levels of the <{0}> effect and the <{4}> effect.",
+      "I will consume <1> level of the <{0}> effect. In Exchange for that, I will swap the levels of the <{0}> effect and the <{4}> effect.",
       "I will consume <1> level of the <{0}> effect. In Exchange for that, I will swap the levels of the <{0}> effect and the <{4}> effect."
     ],
     slotType: 3,
@@ -6196,7 +6196,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I will consume <1> level of the <{1}> effect. In Exchange for that, I will swap the levels of the <{1}> effect and the <{2}> effect.",
-      "It will consume <1> level of the <{1}> effect. Instead, I will swap the levels of the <{1}> effect and the <{2}> effect.",
+      "I will consume <1> level of the <{1}> effect. In Exchange for that, I will swap the levels of the <{1}> effect and the <{2}> effect.",
       "I will consume <1> level of the <{1}> effect. In Exchange for that, I will swap the levels of the <{1}> effect and the <{2}> effect."
     ],
     slotType: 3,
@@ -6226,7 +6226,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I will consume <1> level of the <{1}> effect. In Exchange for that, I will swap the levels of the <{1}> effect and the <{3}> effect.",
-      "It will consume <1> level of the <{1}> effect. Instead, I will swap the levels of the <{1}> effect and the <{3}> effect.",
+      "I will consume <1> level of the <{1}> effect. In Exchange for that, I will swap the levels of the <{1}> effect and the <{3}> effect.",
       "I will consume <1> level of the <{1}> effect. In Exchange for that, I will swap the levels of the <{1}> effect and the <{3}> effect."
     ],
     slotType: 3,
@@ -6256,7 +6256,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I will consume <1> level of the <{1}> effect. In Exchange for that, I will swap the levels of the <{1}> effect and the <{4}> effect.",
-      "It will consume <1> level of the <{1}> effect. Instead, I will swap the levels of the <{1}> effect and the <{4}> effect.",
+      "I will consume <1> level of the <{1}> effect. In Exchange for that, I will swap the levels of the <{1}> effect and the <{4}> effect.",
       "I will consume <1> level of the <{1}> effect. In Exchange for that, I will swap the levels of the <{1}> effect and the <{4}> effect."
     ],
     slotType: 3,
@@ -6286,7 +6286,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I will consume <1> level of the <{3}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{2}> effect.",
-      "It will consume <1> level of the <{3}> effect. Instead, I will swap the levels of the <{2}> effect and the <{2}> effect.",
+      "I will consume <1> level of the <{3}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{2}> effect.",
       "I will consume <1> level of the <{3}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{2}> effect."
     ],
     slotType: 3,
@@ -6316,7 +6316,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I will consume <1> level of the <{4}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{2}> effect.",
-      "It will consume <1> level of the <{4}> effect. Instead, I will swap the levels of the <{2}> effect and the <{2}> effect.",
+      "I will consume <1> level of the <{4}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{2}> effect.",
       "I will consume <1> level of the <{4}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{2}> effect."
     ],
     slotType: 3,
@@ -6346,7 +6346,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I will consume <1> level of the <{3}> effect. In Exchange for that, I will swap the levels of the <{3}> effect and the <{4}> effect.",
-      "It will consume <1> level of the <{3}> effect. Instead, I will swap the levels of the <{3}> effect and the <{4}> effect.",
+      "I will consume <1> level of the <{3}> effect. In Exchange for that, I will swap the levels of the <{3}> effect and the <{4}> effect.",
       "I will consume <1> level of the <{3}> effect. In Exchange for that, I will swap the levels of the <{3}> effect and the <{4}> effect."
     ],
     slotType: 3,
@@ -6376,7 +6376,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I will consume <1> level of the <{1}> effect. In Exchange for that, I will swap the levels of the <{1}> effect and the <{0}> effect.",
-      "It will consume <1> level of the <{1}> effect. Instead, I will swap the levels of the <{1}> effect and the <{0}> effect.",
+      "I will consume <1> level of the <{1}> effect. In Exchange for that, I will swap the levels of the <{1}> effect and the <{0}> effect.",
       "I will consume <1> level of the <{1}> effect. In Exchange for that, I will swap the levels of the <{1}> effect and the <{0}> effect."
     ],
     slotType: 3,
@@ -6406,7 +6406,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I will consume <1> level of the <{0}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{2}> effect.",
-      "It will consume <1> level of the <{0}> effect. Instead, I will swap the levels of the <{2}> effect and the <{2}> effect.",
+      "I will consume <1> level of the <{0}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{2}> effect.",
       "I will consume <1> level of the <{0}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{2}> effect."
     ],
     slotType: 3,
@@ -6436,7 +6436,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I will consume <1> level of the <{3}> effect. In Exchange for that, I will swap the levels of the <{3}> effect and the <{0}> effect.",
-      "It will consume <1> level of the <{3}> effect. Instead, I will swap the levels of the <{3}> effect and the <{0}> effect.",
+      "I will consume <1> level of the <{3}> effect. In Exchange for that, I will swap the levels of the <{3}> effect and the <{0}> effect.",
       "I will consume <1> level of the <{3}> effect. In Exchange for that, I will swap the levels of the <{3}> effect and the <{0}> effect."
     ],
     slotType: 3,
@@ -6466,7 +6466,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I will consume <1> level of the <{4}> effect. In Exchange for that, I will swap the levels of the <{4}> effect and the <{0}> effect.",
-      "It will consume <1> level of the <{4}> effect. Instead, I will swap the levels of the <{4}> effect and the <{0}> effect.",
+      "I will consume <1> level of the <{4}> effect. In Exchange for that, I will swap the levels of the <{4}> effect and the <{0}> effect.",
       "I will consume <1> level of the <{4}> effect. In Exchange for that, I will swap the levels of the <{4}> effect and the <{0}> effect."
     ],
     slotType: 3,
@@ -6496,7 +6496,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I will consume <1> level of the <{1}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{2}> effect.",
-      "It will consume <1> level of the <{1}> effect. Instead, I will swap the levels of the <{2}> effect and the <{2}> effect.",
+      "I will consume <1> level of the <{1}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{2}> effect.",
       "I will consume <1> level of the <{1}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{2}> effect."
     ],
     slotType: 3,
@@ -6526,7 +6526,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I will consume <1> level of the <{3}> effect. In Exchange for that, I will swap the levels of the <{3}> effect and the <{1}> effect.",
-      "It will consume <1> level of the <{3}> effect. Instead, I will swap the levels of the <{3}> effect and the <{1}> effect.",
+      "I will consume <1> level of the <{3}> effect. In Exchange for that, I will swap the levels of the <{3}> effect and the <{1}> effect.",
       "I will consume <1> level of the <{3}> effect. In Exchange for that, I will swap the levels of the <{3}> effect and the <{1}> effect."
     ],
     slotType: 3,
@@ -6556,7 +6556,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I will consume <1> level of the <{4}> effect. In Exchange for that, I will swap the levels of the <{4}> effect and the <{1}> effect.",
-      "It will consume <1> level of the <{4}> effect. Instead, I will swap the levels of the <{4}> effect and the <{1}> effect.",
+      "I will consume <1> level of the <{4}> effect. In Exchange for that, I will swap the levels of the <{4}> effect and the <{1}> effect.",
       "I will consume <1> level of the <{4}> effect. In Exchange for that, I will swap the levels of the <{4}> effect and the <{1}> effect."
     ],
     slotType: 3,
@@ -6586,7 +6586,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I will consume <1> level of the <{3}> effect. In Exchange for that, I will swap the levels of the <{3}> effect and the <{2}> effect.",
-      "It will consume <1> level of the <{3}> effect. Instead, I will swap the levels of the <{3}> effect and the <{2}> effect.",
+      "I will consume <1> level of the <{3}> effect. In Exchange for that, I will swap the levels of the <{3}> effect and the <{2}> effect.",
       "I will consume <1> level of the <{3}> effect. In Exchange for that, I will swap the levels of the <{3}> effect and the <{2}> effect."
     ],
     slotType: 3,
@@ -6616,7 +6616,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I will consume <1> level of the <{4}> effect. In Exchange for that, I will swap the levels of the <{4}> effect and the <{2}> effect.",
-      "It will consume <1> level of the <{4}> effect. Instead, I will swap the levels of the <{4}> effect and the <{2}> effect.",
+      "I will consume <1> level of the <{4}> effect. In Exchange for that, I will swap the levels of the <{4}> effect and the <{2}> effect.",
       "I will consume <1> level of the <{4}> effect. In Exchange for that, I will swap the levels of the <{4}> effect and the <{2}> effect."
     ],
     slotType: 3,
@@ -6646,7 +6646,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I will consume <1> level of the <{4}> effect. In Exchange for that, I will swap the levels of the <{4}> effect and the <{3}> effect.",
-      "It will consume <1> level of the <{4}> effect. Instead, I will swap the levels of the <{4}> effect and the <{3}> effect.",
+      "I will consume <1> level of the <{4}> effect. In Exchange for that, I will swap the levels of the <{4}> effect and the <{3}> effect.",
       "I will consume <1> level of the <{4}> effect. In Exchange for that, I will swap the levels of the <{4}> effect and the <{3}> effect."
     ],
     slotType: 3,
@@ -6706,7 +6706,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I'll enhance <1> effect with the <lowest level> by <1> level. In exchange, however, theone with the <highest level> will lose <1> levels.",
-      "<Lowest level> Effect <1> level will be increased by <1>. However, the <highest level> effect <1> level will be reduced by <1>.",
+      "I can increase the level of <1> effect with the <lowest level> by <1>. But this will result in the <one> with the <highest level> losing <1> level.",
       "I'll increase <1> effect with the <lowest level> by <1> level. But <1> effect with the <highest level> will lose <1> level."
     ],
     slotType: 3,
@@ -6736,7 +6736,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I'll enhance <1> effect with the <lowest level> by <1> level. In exchange, however, theone with the <highest level> will lose <2> levels.",
-      "<Lowest level> Effect <1> level will be increased by <1>. However, the <highest level> effect <1> level will be reduced by <2>.",
+      "I can increase the level of <1> effect with the <lowest level> by <1>. But this will result in the <one> with the <highest level> losing <2> levels.",
       "I'll increase <1> effect with the <lowest level> by <1> level. But <1> effect with the <highest level> will lose <2> levels."
     ],
     slotType: 3,
@@ -6766,8 +6766,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I'll enhance <1> effect with the <lowest level> by <1> level. In exchange, however, one of the <other> effects will lose <1> level.",
-      "<Lowest level> Effect <1> level will be increased by <1>. However, the <1> level of <other> effects will be reduced by <1>.",
-      "I'll increase <1> effect with the <lowest> level by <1> level. But <1> <other> effect will lose <1> level."
+      "I can increase the level of <1> effect with the <lowest level> by <1>. But this will result in the <one> with the <highest level> losing <1> level.",
+      "I'll increase <1> effect with the <lowest level> by <1> level. But <1> <other> effect will lose <1> level."
     ],
     slotType: 3,
     type: "common",
@@ -6796,8 +6796,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I'll enhance <1> effect with the <lowest level> by <1> level. In exchange, however, one of the <other> effects will lose <2> levels.",
-      "<Lowest level> Effect <1> level will be increased by <1>. However, the <1> level of <other> effects will be reduced by <2>.",
-      "I'll increase <1> effect with the <lowest> level by <1> level. But <1> <other> effect will lose <2> levels."
+      "I can increase the level of <1> effect with the <lowest level> by <1>. But this will result in the <one> with the <highest level> losing <2> levels.",
+      "I'll increase <1> effect with the <lowest level> by <1> level. But <1> <other> effect will lose <2> levels."
     ],
     slotType: 3,
     type: "common",
@@ -6826,8 +6826,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I will increase <1> effect with the <highest level> by <1> level.",
-      "I will increase <1> effect with the <highest level> by <1> level.",
-      "I will increase <1> effect with the <highest level> by <1> level."
+      "I'll increase <1> effect with the <highest level> by <1> level.",
+      "I will now increase <1> effect with the <highest level> by <1> level."
     ],
     slotType: 3,
     type: "common",
@@ -6856,7 +6856,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I'll enhance <1> effect with the <highest level> by <1> level. In exchange, however, theone with the <lowest level> will lose <1> level.",
-      "<Highest level> Effect <1> I will raise <1> level. However, the <lowest level> effect <1> level will be reduced by <1>.",
+      "I can increase the level of <1> effect with the <highest level> by <1>. But this will result in the <one> with the <lowest level> losing <1> level.",
       "I'll increase <1> effect with the <highest level> by <1> level. But <1> effect with the <lowest level> will lose <1> levels."
     ],
     slotType: 3,
@@ -6886,7 +6886,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I'll enhance <1> effect with the <highest level> by <1> level. In exchange, however, theone with the <lowest level> will lose <2> levels.",
-      "<Highest level> Effect <1> I will raise <1> level. However, <1> level of <lowest level> effect will be reduced by <2>.",
+      "I can increase the level of <1> effect with the <highest level> by <1>. But this will result in the <one> with the <lowest level> losing <2> levels.",
       "I'll increase <1> effect with the <highest level> by <1> level. But <1> effect with the <lowest level> will lose <2> levels."
     ],
     slotType: 3,
@@ -6916,7 +6916,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I'll enhance <1> effect with the <highest level> by <1> level. In exchange, however, <1> <random> effect will lose <1> level.",
-      "<Highest level> Effect <1> I will raise <1> level. However, <1> stages of <random> effects will be reduced by <1>.",
+      "I can increase the level of <1> effect with the <highest level> by <1>. But this will result in <1> <random> effect losing <1> level.",
       "I'll increase <1> effect with the <highest level> by <1> level. But <1> <random> effect will lose <1> levels."
     ],
     slotType: 3,
@@ -6946,7 +6946,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I'll enhance <1> effect with the <highest level> by <1> level. In exchange, however, <1> <random> effect will lose <2> levels.",
-      "<Highest level> Effect <1> I will raise <1> level. However, <random> effects <1> steps will be reduced by <2>.",
+      "I can increase the level of <1> effect with the <highest level> by <1>. But this will result in <1> <random> effect losing <2> levels.",
       "I'll increase <1> effect with the <highest level> by <1> level. But <1> <random> effect will lose <2> levels."
     ],
     slotType: 3,
@@ -6976,7 +6976,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I'll enhance <1> effect with the <lowest level> by <2> levels. In exchange, however, theone with the <highest level> will lose <2> levels.",
-      "<Lowest level> Effect <1> level will be increased by <2>. However, the <1> level of <other> effects will be reduced by <2>.",
+      "I can increase the level of <1> effect with the <lowest level> by <2>. But this will result in the <one> with the <highest level> losing <2> levels.",
       "I'll increase <1> effect with the <lowest level> by <2> levels. But <1> effect with the <lowest level> will lose <2> levels."
     ],
     slotType: 3,
@@ -7005,9 +7005,8 @@ export const councils: readonly Council[] = [
       6
     ],
     descriptions: [
-      //yes theone
       "I'll enhance <1> effect with the <lowest level> by <2> levels. In exchange, however, theone with the <highest level> will lose <1> level.",
-      "<Lowest level> Effect <1> level will be raised <2>. However, the <highest level> effect <1> level will be reduced by <1>.,,",
+      "I can increase the level of <1> effect with the <lowest level> by <2>. But this will result in the <one> with the <highest level> losing <1> level.",
       "I'll increase <1> effect with the <lowest level> by <2> levels. But <1> effect with the <lowest level> will lose <1> level."
     ],
     slotType: 3,
@@ -7037,7 +7036,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I'll enhance <1> effect with the <lowest level> by <2> levels. In exchange, however, <one> the <other> effects will lose <2> levels.",
-      "<Lowest level> Effect <1> level will be raised <2>. However, the <1> level of <other> effects will be reduced by <2>.,,,",
+      "I can increase the level of <1> effect with the <lowest level> by <2>. But this will result in the <one> with the <highest level> losing <2> levels.",
       "I'll increase <1> effect with the <lowest level> by <2> levels. But <1> effect with the <lowest level> will lose <2> levels."
     ],
     slotType: 3,
@@ -7067,13 +7066,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I'll enhance <1> effect with the <lowest level> by <2> levels. In exchange, however, one of the <other> effects will lose <1> level.",
-      "<Lowest level> Effect <1> level will be increased by <2>. However, the <1> level of <other> effects will be reduced by <1>.",
-      "I'll increase <1> effect with the <lowest> level by <2> levels. But <1> <other> effect will lose <1> level."
-      /*
-      "<lowest level> effect raises <1> level by <2>. But <1> other effects will go down <1> level.",
-      "<Lowest level> Effect <1> level will be raised <2>. However, the <1> level of <other> effects will be reduced by <1>.",
-      "<lowest level> I will raise the effect <1> level to <2>. <Other> effects <1> steps will be reduced by <1>."
-      */
+      "I can increase the level of <1> effect with the <lowest level> by <2>. But this will result in <one> of the <other> effects losing <1> level.",
+      "I'll increase <1> effect with the <lowest level> by <2> levels. But <1> <other> effect will lose <1> level.",
     ],
     slotType: 3,
     type: "common",
@@ -7102,8 +7096,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I will increase <1> effect with the <lowest level> by <2> levels.",
-      "I will increase <1> effect with the <lowest level> by <2> levels.",
-      "I will increase <1> effect with the <lowest level> by <2> levels."
+      "I'll increase <1> effect with the <lowest level> by <2> levels.",
+      "I will now increase <1> effect with the <lowest level> by <2> levels."
     ],
     slotType: 3,
     type: "common",
@@ -7132,8 +7126,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "Some of the effects haven't been enhanced yet. Let me enhance all of them by <1> level.",
-      "Some of the effects haven't been enhanced yet. Let me enhance all of them by <1> level.,,,",
-      "Some of the effects haven't been enhanced yet. Let me enhance all of them by <1> level.,,,"
+      "I can enhance all of the unenhanced effects by <1> level.",
+      "You have effects that have yet to be enhanced. If you let me, I'll enhance all of them by <1> level."
     ],
     slotType: 3,
     type: "common",
@@ -7162,8 +7156,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "Some of the effects have a level of <2> or lower. Let me increase all of them by <1> level.",
-      "Some of the effects have a level of <2> or lower. Let me increase all of them by <1> level.,,",
-      "Some of the effects have a level of <2> or lower. Let me increase all of them by <1> level.,,"
+      "I can enhance all of the effects at Lv. <2> or below by <1> level.",
+      "There are some effects at level <2> or lower. I will increase all of them by <1> level."
     ],
     slotType: 3,
     type: "common",
@@ -7192,8 +7186,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "Some of the effects have a level of <4> or lower. Let me increase all of them by <1> level.",
-      "Some of the effects have a level of <4> or lower. Let me increase all of them by <1> level.,,,",
-      "Some of the effects have a level of <4> or lower. Let me increase all of them by <1> level.,,,"
+      "I can enhance all of the effects at Lv. <4> or below by <1> level.",
+      "There are some effects at level <4> or lower. I will increase all of them by <1> level."
     ],
     slotType: 3,
     type: "common",
@@ -7222,8 +7216,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "Some of the effects have a level of <6> or lower. Let me increase all of them by <1> level.",
-      "Some of the effects have a level of <6> or lower. Let me increase all of them by <1> level.,,,",
-      "Some of the effects have a level of <6> or lower. Let me increase all of them by <1> level.,,,,",
+      "I can enhance all of the effects at Lv. <6> or below by <1> level.",
+      "There are some effects at level <6> or lower. I will increase all of them by <1> level."
     ],
     slotType: 3,
     type: "common",
@@ -7252,8 +7246,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I'll increase the level of slots <1, 3, and 5> by <1> level. In exchange, however, the ones in <2 and 4> will be decreased by <2> levels.",
-      "I'll increase the level of slots <1, 3, and 5> by <1> level. In exchange, however, the ones in <2 and 4> will be decreased by <2> levels.",
-      "I'll increase the level of slots <1, 3, and 5> by <1> level. In exchange, however, the ones in <2 and 4> will be decreased by <2> levels.",
+      "I can increase the level of effects in <slots 1, 3, and 5> by <1>. However, this will result in the effects in slots <2 and 4> losing <2> levels.",
+      "I will increase the level of slots <1, 3, and 5> by <1> level. But slots <2 and 4> will be decreased by <2> levels.",
     ],
     slotType: 3,
     type: "common",
@@ -7293,9 +7287,9 @@ export const councils: readonly Council[] = [
       99
     ],
     descriptions: [
-      "I'll enhance the effects in Slots <2 and 4> by <1> level. In exchange, however, the ones in Slots <1, 3, and 5> will lose <2> levels.",
-      "I'll enhance the effects in Slots <2 and 4> by <1> level. In exchange, however, the ones in Slots <1, 3, and 5> will lose <2> levels.",
-      "I'll enhance the effects in Slots <2 and 4> by <1> level. In exchange, however, the ones in Slots <1, 3, and 5> will lose <2> levels."
+      "I'll enhance the effects in <slots 2 and 4> by <1> level. In exchange, however, the ones in <slots 1, 3, and 5> will be decreased by <1> level.",
+      "I can increase the level of effects in <slots 2 and 4> by <1>. However, this will result in effects in <slots 1, 3, and 5> losing <1> level.",
+      "I will increase the level of slots <2 and 4> by <1> level. But slots <1, 3, and 5> will be decreased by <1> level."
     ],
     slotType: 3,
     type: "common",
@@ -7365,8 +7359,8 @@ export const councils: readonly Council[] = [
       99
     ],
     descriptions: [
-      "I'll seal the <{0}> effect, but at the cost of 2 remaining attempts.",
-      "I'll seal the <{0}> effect, but at the cost of 2 remaining attempts.",
+      "I'll seal the <{0}> effect at the cost of 2 remaining attempts.",
+      "I'll seal the <{0}> effect at the cost of 2 remaining attempts.",
       "I'll seal the <{0}> effect. It will consume <2> attempts."
     ],
     slotType: 3,
@@ -7407,8 +7401,8 @@ export const councils: readonly Council[] = [
       99
     ],
     descriptions: [
-      "I'll seal the <{1}> effect, but at the cost of 2 remaining attempts.",
-      "<{1}> I will seal the effect. However, in this training, you will use up <2> opportunities.",
+      "I'll seal the <{1}> effect at the cost of 2 remaining attempts.",
+      "I'll seal the <{1}> effect at the cost of 2 remaining attempts.",
       "I'll seal the <{1}> effect. It will consume <2> attempts."
     ],
     slotType: 3,
@@ -7449,8 +7443,8 @@ export const councils: readonly Council[] = [
       99
     ],
     descriptions: [
-      "I'll seal the <{2}> effect, but at the cost of 2 remaining attempts.",
-      "<{2}> I will seal the effect. However, in this training, you will use up <2> opportunities.",
+      "I'll seal the <{2}> effect at the cost of 2 remaining attempts.",
+      "I'll seal the <{2}> effect at the cost of 2 remaining attempts.",
       "I'll seal the <{2}> effect. It will consume <2> attempts."
     ],
     slotType: 3,
@@ -7491,8 +7485,8 @@ export const councils: readonly Council[] = [
       99
     ],
     descriptions: [
-      "I'll seal the <{3}> effect, but at the cost of 2 remaining attempts.",
-      "<{3}> I will seal the effect. However, in this training, you will use up <2> opportunities.",
+      "I'll seal the <{3}> effect at the cost of 2 remaining attempts.",
+      "I'll seal the <{3}> effect at the cost of 2 remaining attempts.",
       "I'll seal the <{3}> effect. It will consume <2> attempts."
     ],
     slotType: 3,
@@ -7533,8 +7527,8 @@ export const councils: readonly Council[] = [
       99
     ],
     descriptions: [
-      "I'll seal the <{4}> effect, but at the cost of 2 remaining attempts.",
-      "<{4}> I will seal the effect. However, in this training, you will use up <2> opportunities.",
+      "I'll seal the <{4}> effect at the cost of 2 remaining attempts.",
+      "I'll seal the <{4}> effect at the cost of 2 remaining attempts.",
       "I'll seal the <{4}> effect. It will consume <2> attempts."
     ],
     slotType: 3,
@@ -7576,8 +7570,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I'll seal the <selected> effect at the cost of 2 remaining attempts.",
-      "I'll seal the <selected> effect at the cost of 2 remaining attempts.",
-      "I'll seal the <selected> effect at the cost of 2 remaining attempts."
+      "I'll seal the effect <you have selected> at the cost of 2 remaining attempts.",
+      "I'll seal the effect <you selected> at the cost of 2 remaining attempts."
     ],
     slotType: 3,
     type: "common",
@@ -7618,7 +7612,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "You will not have to pay for this creation.",
-      "You will not have to pay for this creation.",
+      "You won't need to pay for this creation.",
       "You won't need to pay for this creation."
     ],
     slotType: 3,
@@ -7648,7 +7642,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "All future creations will cost you <20%> less.",
-      "All future creations will cost you <20%> less.",
+      "All remaining transmutations will cost you <20%> less.",
       "All future creations will cost you <20%> less."
     ],
     slotType: 3,
@@ -7678,7 +7672,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "All future creations will cost you <40%> less.",
-      "All future creations will cost you <40%> less.",
+      "All remaining transmutations creations will cost you <40%> less.",
       "All future creations will cost you <40%> less."
     ],
     slotType: 3,
@@ -7858,8 +7852,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "We're at the final step now. I'll seal the <selected> effect.",
-      "We're almost over. I will seal the effect <you select>.",
-      "Let's finish it now. I will seal the effect <you chose>."
+      "It's almost over. I will seal the effect <you have select>.",
+      "Let's finish it now. I will seal the effect <you selected>."
     ],
     slotType: 3,
     type: "seal",
@@ -7921,9 +7915,9 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "(The sage is taking a break.)",
-      "(The sage is taking a break.)",
-      "(The sage is taking a break.)"
+      "(The sage is resting.)",
+      "(The sage is resting.)",
+      "(The sage is resting.)"
     ],
     slotType: 3,
     type: "exhausted",
@@ -7938,9 +7932,9 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "(The sage is in agony.)",
-      "(The sage is in agony.)",
-      "(The sage is in agony.)"
+      "(The sage is troubled.)",
+      "(The sage is troubled.)",
+      "(The sage is troubled.)"
     ],
     slotType: 3,
     type: "exhausted",
@@ -7972,9 +7966,9 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "(The Sage is working on new research.)",
-      "(The Sage is working on new research.)",
-      "(The Sage is working on new research.)"
+      "(The sage is working on new research.)",
+      "(The sage is working on new research.)",
+      "(The sage is working on new research.)"
     ],
     slotType: 3,
     type: "exhausted",
@@ -7989,9 +7983,9 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "(The sage is lost in meditation.)",
-      "(The sage is lost in meditation.)",
-      "(The sage is lost in meditation.)"
+      "(The sage is lost in contemplation.)",
+      "(The sage is lost in contemplation.)",
+      "(The sage is lost in contemplation.)"
     ],
     slotType: 3,
     type: "exhausted",
@@ -8006,9 +8000,9 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "(The sage is lost in contemplation.)",
-      "(The sage is lost in contemplation.)",
-      "(The sage is lost in contemplation.)"
+      "(The sage is lost in thought.)",
+      "(The sage is lost in thought.)",
+      "(The sage is lost in thought.)"
     ],
     slotType: 3,
     type: "exhausted",
@@ -8204,7 +8198,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "This time, I can enhance the <selected> effect by <2> levels.",
-      "This time, I will be translating the effect <of your choice> to level <2>.",
+      "This time, I will enhance the effect <you have selected> by <2> levels.",
       "This time, I will enhance the effect <you've selected> by <2> levels."
     ],
     slotType: 3,
@@ -8234,7 +8228,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "This transmutation will not consume an attempt this time.",
-      "This transmutation will not consume an attempt this time.",
+      "I will transmute without consuming an attempt this time.",
       "This transmutation will not consume an attempt this time."
     ],
     slotType: 3,
@@ -8444,7 +8438,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I will seal the effect <you selected>.",
-      "I will seal the effect <you selected>.",
+      "I will seal the effect <you have selected>.",
       "I will seal the effect <you selected>.",
     ],
     slotType: 3,
@@ -8474,7 +8468,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "Do you need more advice? I will increase the number of times you can view Other Advice by <2>.",
-      "I'll increase the number of times I see your other advice by <2>.,,,",
+      "I will increase the number of times you can view Other Advice by <2>.",
       "You should always listen to advice. I will increase the number of times you can view Other Advice by <2>."
     ],
     slotType: 3,
@@ -8504,7 +8498,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "Do you need more advice? I will increase the number of times you can view Other Advice by <1>.",
-      "I will increase the number of views of your other advice by <1>.,,,",
+      "I will increase the number of times you can view Other Advice by <1>.",
       "You should always listen to advice. I will increase the number of times you can view Other Advice by <1>."
     ],
     slotType: 3,
@@ -8534,8 +8528,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "It's the final step now. The effect <you select> will is sealed, and the transmutation will not consume an attempt this time.",
-      "It's the final step now. The effect <you select> will be sealed, and the transmutation will not consume an attempt this time.",
-      "It's the final step now. The effect <you select> will be sealed, and the transmutation will not consume an attempt this time."
+      "It's almost over. The effect <you selected> will be sealed, and the transmutation will not consume an attempt this time.",
+      "Let's finish it now. The effect <you selected> will be sealed, and the transmutation will not consume an attempt this time."
     ],
     slotType: 3,
     type: "lawfulSeal",
@@ -8576,8 +8570,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "It's the final step now. The effect <you select> will be sealed, and the effect transmuted will increase by <2> levels.",
-      "The alchemy is being completed. The effect <of your choice> will be sealed, and the effect created this time will go up <2> levels.,,,",
-      "Let's wrap it up now. The effect <you chose> will be sealed, and the effect that will be combined this time will go up <2> levels.,,,"
+      "It's almost over. The effect <you selected> will be sealed, and the effect transmuted will increase by <2> levels.",
+      "Let's finish it now.The effect <you selected> will be sealed and the effect that transmuted this time will increase by <2>levels."
     ],
     slotType: 3,
     type: "lawfulSeal",
@@ -8618,8 +8612,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "It's the final step now. The effect <you select> will be sealed, and I will transmute <2> effects at the same time.",
-      "It's almost over. The effect <you selected> will be sealed, and i will transmute <2> effects at the same time.",
-      "Let's wrap it up now. The effect <you chose> will be sealed, and this conversion will combine <2> effects at the same time.,,,"
+      "It's almost over. The effect <you selected> will be sealed, and I will transmute <2> effects at the same time.",
+      "Let's finish it now. The effect <you selected> will be sealed, and I will transmute <2> effects at the same time."
     ],
     slotType: 3,
     type: "lawfulSeal",
@@ -8660,8 +8654,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "It's the final step now. I'll seal the <selected> effect.",
-      "The alchemy is being completed. I will seal the effect <of your choice>.,,,",
-      "Let's wrap it up now. I will seal the effect <you chose>.,,,"
+      "It's almost over. I will seal the effect <you have selected>.",
+      "Let's finish it now. I will seal the effect <you selected>."
     ],
     slotType: 3,
     type: "lawfulSeal",
@@ -8689,9 +8683,9 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "I will unseal 1 random effect, and seal 1 other effect.",
-      "<Random effect> I will remove <1> seals. Instead, let's seal <1> other effects.,,,",
-      "<Random effect> I will remove <1> seals. Instead, <1> other effects are sealed.,,,"
+      "I will unseal <1> <random effect>, and seal <1> other effect.",
+      "I will unseal <1> <random effect> for you and seal <1> other effect.",
+      "I will unseal <1> <random effect> and instead, seal <1> other effect."
     ],
     slotType: 3,
     type: "chaos",
@@ -8720,8 +8714,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I can redistribute the levels for <all> effects. Let's see how it shakes out.",
-      "I'm going to mix up the steps for <all effects>. I hope you get good results.,,,",
-      "Let me mix up the steps of <All Effects>. I hope you get the results you want.,,,"
+      "I will redistribute the levels for <all effects>. Fingers crossed for good results.",
+      "Let's redistribute the levels for <all Effects>. It's in luck's hands, now."
     ],
     slotType: 3,
     type: "chaos",
@@ -8749,9 +8743,9 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "I can redistribute the levels for <all effects>. Let's see how it shakes out.",
-      "I will redistribute the stages of <all effects>. I hope you get good results.",
-      "Redistribute the stages of <all effects>. I hope you get the results you want."
+      "I will shuffle the levels for <all effects>. Let's see how things end up.",
+      "I will shuffle the levels for <all effects>. Fingers crossed for good results.",
+      "Let's shuffle the levels for <all effects>. It's in luck's hands, now."
     ],
     slotType: 3,
     type: "chaos",
@@ -8779,9 +8773,9 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "I will increase <random> effect by <2> level. Let's see which effect it will be.",
-      "<Random Effect> I'll raise <1> levels <2>.,,,",
-      "<Random Effect> I will raise <1> level to <2>. I don't know what effect it will have.,,,"
+      "I will increase <random> effect by <2> levels. Let's see which effect it will be.",
+      "I will increase <1> <random effect> by <2> levels.",
+      "I will increase <1> <temporary effect> by <2> levels. I don't know which effect it will be."
     ],
     slotType: 3,
     type: "chaos",
@@ -8840,8 +8834,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I will change the effect of the slot <you selected>. Let's see which effect it will be.",
-      "I will change the effect of the slot <you selected>. I hope you get good results.",
-      "I will change the effect of the slot <you selected>. I hope you get the results you want.,,,"
+      "I will change the effect of the slot <you selected>. Fingers crossed for good results.",
+      "Let's change the effect of the slot <you selected>. It's in luck's hands, now."
     ],
     slotType: 3,
     type: "chaos",
@@ -8869,8 +8863,8 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "I will <exhaust> all of my power. But, I will increase the level of the effect <you selected> by [<0>~<+4>].",
-      "I will <exhaust> all of my power. But, I will increase the level of the effect <you selected> by [<0>~<+4>].",
+      "I will <exhaust> all of my power. But I will increase the level of the effect <you selected> by [<0>~<+4>].",
+      "I will <exhaust> all of my power. But I will increase the level of the effect <you selected> by [<0>~<+4>].",
       "I will <exhaust> all of my power. But, I will increase the level of the effect <you selected> by [<0>~<+4>].",
     ],
     slotType: 0,
@@ -8911,8 +8905,8 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "I will <exhaust> all of my power. But, I will increase the level of the effect <you selected> by [<+2>~<+3>].",
-      "I will <exhaust> all of my power. But, I will increase the level of the effect <you selected> by [<+2>~<+3>].",
+      "I will <exhaust> all of my power. But I will increase the level of the effect <you selected> by [<+2>~<+3>].",
+      "I will <exhaust> all of my power. But I will increase the level of the effect <you selected> by [<+2>~<+3>].",
       "I will <exhaust> all of my power. But, I will increase the level of the effect <you selected> by [<+2>~<+3>]."
     ],
     slotType: 1,
@@ -8953,8 +8947,8 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "I will <exhaust> all of my power. But, I will increase the level of the effect <you selected> by [<-4>-<+5>].",
-      "I will <exhaust> all of my power. But, I will increase the level of the effect <you selected> by [<-4>-<+5>].",
+      "I will <exhaust> all of my power. But I will increase the level of the effect <you selected> by [<-4>-<+5>].",
+      "I will <exhaust> all of my power. But I will increase the level of the effect <you selected> by [<-4>-<+5>].",
       "I will <exhaust> all of my power. But, I will increase the level of the effect <you selected> by [<-4>-<+5>]."
     ],
     slotType: 2,
@@ -8996,7 +8990,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I'll move the levels of <all effects> up <1> slot for you.",
-      "I'll move the levels of <all effects> up <1> slot for you.",
+      "I'll move the levels of <all effects> up <1> slot.",
       "I'll move the levels of <all effects> up <1> slot for you."
     ],
     slotType: 3,
@@ -9026,7 +9020,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I'll move the levels of <all effects> down <1> slot for you.",
-      "I'll move the levels of <all effects> down <1> slot for you.",
+      "I'll move the levels of <all effects> down <1> slot.",
       "I'll move the levels of <all effects> down <1> slot for you."
     ],
     slotType: 3,
@@ -9055,9 +9049,9 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "All stages of the effect <you choose> are divided into other effects. Let's see how it's divided.",
-      "All levels of the effect <of your choice> will be randomly distributed among other effects. I hope you get good results.",
-      "Let’s divide all the stages of the effect <you chose> into other effects. May your wishes come true."
+      "I will distribute <all> the levels of the effect <you selected> among the other effects. Let's see how it's divided up.",
+      "I will randomly distribute <all> the levels of the effect <you selected> among the other effects. Fingers crossed for good results.",
+      "I will distribute all the levels of the effect <you selected> among the other effects. I hope things turn out the way you want."
     ],
     slotType: 3,
     type: "chaos",
@@ -9086,8 +9080,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I will distribute <all> the levels of <1> effect with the <lowest level> among the <other> effects. Let's see how it's divided up.",
-      "<Lowest level> Effect <1> All levels will be randomly distributed to other effects. I hope you get good results.,,,",
-      "I will distribute <all> the levels of <1> effect with the <lowest level> among the other effects. I hope things turn out the way you want."
+      "I will randomly distribute <all> the levels of <1> effect with the <lowest level> among the <other> effects. Fingers crossed for good results.",
+      "I will distribute <all> the levels of <1> effect with the <lowest level> among the <other> effects. I hope things turn out the way you want."
     ],
     slotType: 3,
     type: "chaos",
@@ -9116,7 +9110,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "I will distribute <all> the levels of <1> effect with the <highest level> among the other effects. Let's see how it's divided up.",
-      "<Highest level> Effect <1> All levels will be randomly distributed to other effects. I hope you get good results.",
+      "I will randomly distribute <all> the levels of <1> effect with the <highest level> among the other effects. Fingers crossed for good results.",
       "I will distribute <all> the levels of <1> effect with the <highest level> among the other effects. I hope things turn out the way you want."
     ],
     slotType: 3,
@@ -9145,9 +9139,9 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "It's the final step now. The effect to be <selected> will be sealed, and I will increase <1> random effect by <1> level.",
-      "The alchemy is being completed. I will seal the effect <of your choice> and raise <1> <random effects> by <1> level.",
-      "Let's wrap it up now. I will seal the effect <of your choice> and raise <1> <1> level of <another effect> by <1>."
+      "It's the final step now. The effect <to be selected> will be sealed, and I will increase <1> random effect by <1> level.",
+      "t's almost over. I will seal the effect that <you chose> and increase <1> <random effect> by <1> level.",
+      "We're at the final stage. I will seal the effect that <you chose> and increase <1> <other effect> by <1> level."
     ],
     slotType: 3,
     type: "chaosSeal",
@@ -9187,8 +9181,8 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "It's the final step now. The effect to be <selected> will be sealed, and I will increase <1> effect with the <lowest level> by <1> level.",
-      "The alchemy is being completed. I will seal the effect <of your choice> and raise the <lowest level> effect <1> level by <1>.,,",
+      "It's the final step now. The effect <to be selected> will be sealed, and I will increase <1> effect with the <lowest level> by <1> level.",
+      "It's almost over. I will seal the effect <you have selected> and increase <1> effect with the <lowest level> by <1> level.",
       "We're at the final stage. I will seal the effect that <you chose> and increase <1> effect with the <lowest level> by <1> level."
     ],
     slotType: 3,
@@ -9230,8 +9224,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "It's the final step now. I'll seal the <selected> effect and redistribute the levels of <all> effects at <random>. Good luck.",
-      "The alchemy is being completed. The effect <of your choice> will be sealed, and the stages of <all effects> will be randomly redistributed. I hope you get good results.",
-      "Let's wrap it up now. The effect <of your choice> is sealed, and the stages of <all effects> are randomly redistributed. May your wishes come true."
+      "It's almost over. I can seal the effect <you have selected > and randomly redistribute the levels of <all effects>. Fingers crossed for good results.",
+      "Let's finish it now. I'll seal the effect <you have selected> and randomly redistribute the levels of <all effects>. I hope things turn out the way you want."
     ],
     slotType: 3,
     type: "chaosSeal",
@@ -9272,8 +9266,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "It's the final step now. I'll seal the <selected> effect and shuffle the levels of <all> effects. Good luck.",
-      "The alchemy is being completed. I will seal the effect <of your choice> and randomly shuffle the stages of <all effects>. I hope you get good results.",
-      "Let's wrap it up now. We will seal the effect <of your choice> and randomly shuffle the stages of <all effects>. May your wishes come true."
+      "It's almost over. I can seal the effect <you have selected> and shuffle the levels of <all effects>. Fingers crossed for good results.",
+      "Let's finish it now. I'll seal the effect <you have selected> and randomly redistribute the levels of <all effects>. I hope things turn out the way you want."
     ],
     slotType: 3,
     type: "chaosSeal",
@@ -9314,8 +9308,8 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "It's the final step now. I'll seal the <selected> effect.",
-      "The alchemy is being completed. I will seal the effect <of your choice>.",
-      "Let's wrap it up now. I will seal the effect <you chose>."
+      "It's almost over. I will seal the effect <you have selected>.",
+      "Let's finish it now. I will seal the effect <you selected.>."
     ],
     slotType: 3,
     type: "chaosSeal",

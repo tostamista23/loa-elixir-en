@@ -74,7 +74,7 @@ export class DetectionService {
             //Effects
             await Promise.all(
                 screen.effects.map((box: Box) => (
-                    scheduler.addJob('recognize', box.image).then((x: any) => box.text = x.data.text.replace(/[\r\n]/g, ' ').replace(/\s+$/, ''))
+                    scheduler.addJob('recognize', box.image).then((x: any) => {console.log(x.data.text);box.text = x.data.text.replace(/[\r\n]/g, ' ').replace(/\s+$/, '')})
                 ))
             )
             
