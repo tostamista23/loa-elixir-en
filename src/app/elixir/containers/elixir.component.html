@@ -9,7 +9,7 @@
         <div class="">
           <img src="assets/sages.jpg" />
           <div class="row mt--6">
-            <div class="flex" *ngFor="let idx of [0, 1, 2]">
+            <div class="flex" *ngFor="let idx of [0, 1, 2]" [class.isHighest]="isMaxValue(totalScores[idx])">
               <app-elixir-sage
               [gameState]="gameState"
               [curveScores]="curveScores"
