@@ -17,5 +17,5 @@ export function  GetEffectLevelCoord(height: number, index: number, addToWidth =
 }
 
 function GetHeightByEffectIndex(height: number, index: number, value: number): number {
-    return (index)*height + (index*72) + value
+    return (index)*height + (index*71.5) + value
 }

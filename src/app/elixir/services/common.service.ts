@@ -95,7 +95,6 @@ export class CommonService {
                     contrast = (contrast / 100) + 1;
         
                     for (let i = 0; i < data.length; i += 4) {
-                        // Aplicando o contraste a cada canal de cor (R, G, B)
                         data[i] = ((data[i] / 255 - 0.5) * contrast + 0.5) * 255;
                         data[i + 1] = ((data[i + 1] / 255 - 0.5) * contrast + 0.5) * 255;
                         data[i + 2] = ((data[i + 2] / 255 - 0.5) * contrast + 0.5) * 255;
@@ -116,9 +115,6 @@ export class CommonService {
                     }
         
                     context.putImageData(imageData, 0, 0);
-        
-                    // Obtendo a imagem ajustada como uma string base64
-                    //const adjustedBase64 = canvas.toDataURL('image/jpeg');
                 }
                 
                 resolve(canvas.toDataURL('image/jpeg'));

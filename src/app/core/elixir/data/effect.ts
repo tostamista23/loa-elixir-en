@@ -71,7 +71,7 @@ export const effectOptions: readonly EffectOption[] = [
     ],
   },
   {
-    name: "Master of Expert",
+    name: "Escape Expert",
     optionDescriptions: [
       "Cooldown reduction of escape skills",
       "Cooldown reduction of escape skills +0.38%",
@@ -126,7 +126,7 @@ export const effectOptions: readonly EffectOption[] = [
     ],
   },
   {
-    name: "Wanderer",
+    name: "Vagabond",
     optionDescriptions: [
       "Damage increase when not in a party or raid",
       "Damage increase when not in a party or raid +0.8%",
@@ -203,7 +203,7 @@ export const effectOptions: readonly EffectOption[] = [
     ],
   },
   {
-    name: "Mighty (Order)",
+    name: "Fierce Strength (Order)",
     optionDescriptions: [
       "Attack Power",
       "Attack Power +0.23%",
@@ -225,7 +225,7 @@ export const effectOptions: readonly EffectOption[] = [
     ],
   },
   {
-    name: "Fire Mastery (Order)",
+    name: "Advance (Order)",
     optionDescriptions: [
       "Attack Power",
       "Attack Power +0.23%",
@@ -255,9 +255,18 @@ export const effectOptions: readonly EffectOption[] = [
       "Party Attack Power buff based on own Attack Power +3%",
       "Party Attack Power buff based on own Attack Power +4%",
     ],
-  },
-  {
+  },{
     name: "Luminary (Order)",
+    optionDescriptions: [
+      "Party Attack Power buff based on own Attack Power",
+      "Party Attack Power buff based on own Attack Power +0.64%",
+      "Party Attack Power buff based on own Attack Power +1.32%",
+      "Party Attack Power buff based on own Attack Power +2%",
+      "Party Attack Power buff based on own Attack Power +3%",
+      "Party Attack Power buff based on own Attack Power +4%",
+    ],
+  },{
+    name: "Advance (Order)",
     optionDescriptions: [
       "Party Attack Power buff based on own Attack Power",
       "Party Attack Power buff based on own Attack Power +0.64%",
@@ -323,7 +332,7 @@ export const effectOptions: readonly EffectOption[] = [
     ],
   },
   {
-    name: "Maximum Health",
+    name: "Max HP",
     optionDescriptions: [
       "Maximum Health",
       "Maximum Health +2720",
@@ -334,7 +343,7 @@ export const effectOptions: readonly EffectOption[] = [
     ],
   },
   {
-    name: "Reduced Damage Taken",
+    name: "Incoming Damage Reduction",
     optionDescriptions: [
       "Reduced Damage Taken",
       "Reduced Damage Taken +1.6%",
@@ -356,7 +365,7 @@ export const effectOptions: readonly EffectOption[] = [
     ],
   },
   {
-    name: "Magical Defense",
+    name: "Mag. Defense",
     optionDescriptions: [
       "Magical Defense",
       "Magical Defense +960",
@@ -389,7 +398,7 @@ export const effectOptions: readonly EffectOption[] = [
     ],
   },
   {
-    name: "Identity Acquisition",
+    name: "Specialty Gain",
     optionDescriptions: [
       "Identity Gauge acquisition amount on successful hit",
       "Identity Gauge acquisition amount on successful hit +0.64%",
@@ -444,7 +453,7 @@ export const effectOptions: readonly EffectOption[] = [
     ],
   },
   {
-    name: "Mighty (Chaos)",
+    name: "Fierce Strength (Chaos)",
     optionDescriptions: [
       "Additional Damage",
       "Damage to enemies +0.23%",
@@ -488,18 +497,7 @@ export const effectOptions: readonly EffectOption[] = [
     ],
   },
   {
-    name: "Faith (Chaos)",
-    optionDescriptions: [
-      "Party recovery and shield effect given",
-      "Party recovery and shield effect given +0.23%",
-      "Party recovery and shield effect given +0.47%",
-      "Party recovery and shield effect given +0.72%",
-      "Party recovery and shield effect given +1.08%",
-      "Party recovery and shield effect given +1.44%",
-    ],
-  },
-  {
-    name: "Luminary (Chaos)",
+    name: "Advance (Chaos)",
     optionDescriptions: [
       "Party recovery and shield effect given",
       "Party recovery and shield effect given +0.23%",

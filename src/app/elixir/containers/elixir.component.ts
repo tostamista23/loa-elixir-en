@@ -293,7 +293,7 @@ export class ElixirComponent implements OnInit {
 
       if (result.length === 0){
         console.log(box.text);
-        console.log(list.filter(x => x.id == "6WfZZIUE"));
+        console.log(list.filter(x => x.id == "ijXdy8lT"));
         alert(box.text + " not found")
         return
       }else if (box.text && result.length !== 1 && result.length <= 10) {
