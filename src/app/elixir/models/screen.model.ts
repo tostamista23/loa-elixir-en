@@ -54,7 +54,7 @@ export class ScreenBox {
     updateToAspectRatio(){
         this.sages[0].x +=5
         this.effects.forEach(x => x.x -= 7.5)
-        this.attemptsLeft = new Box(22, 25, 988, 850)
+        this.attemptsLeft = new Box(22, 25, 987, 848)
     }
 
     updateToAspectRatio169(){
