@@ -3405,9 +3405,9 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "I will increase <1> <random> effect by <1> level. Let's see which effect it will be.",
+      "I will increase a <random> effect by <1> level. Let's see which effect it will be.",
       "I will increase <1> <random> effect by <1> level.",
-      "I will increase <1> <temporary> effect by <1> level. I don't know which effect it will be."
+      "I'll increase <1> <random> effect by <1> level."
     ],
     slotType: 3,
     type: "common",
