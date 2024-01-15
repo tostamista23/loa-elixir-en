@@ -139,7 +139,14 @@ export class Box {
             ["+2)", "+2]"],
             ["2- +", "2 - +"],
             ["mn ete ", "I'll change "],
-            ["t's ", "It's "]
+            ["t's ", "It's "],
+            ["This time. ", "This time, "],
+            ["LeIt's", "Let's"],
+            ["I random", "1 random"],
+            ["effect 2 levels", "effect by 2 levels"],
+            ["by[", "by ["],
+            ["by2", "by 2"],
+            ["|[", "["],
         ];
 
         for (const [pattern, replacement] of toReplace) {
@@ -159,7 +166,7 @@ export class Box {
         }
 
         if (this.text.endsWith(",")){
-            this.text = this.text.replace(",",".")
+            this.text = this.text.slice(0, -1) + ".";
         }
 
         if (this.text.endsWith("down | ll")){
@@ -167,14 +174,19 @@ export class Box {
         }
 
         //wrong caracters after levels.
-        if (this.text.includes("Elixir's effects and levels.")){
-            this.text = this.text.split("Elixir's effects and levels.")[0]
+        const textToFix = "Elixir's effects and levels."
+        let index = this.text.indexOf(textToFix);
+        if (index !== -1) {
+            this.text = this.text.substring(0, index + textToFix.length);
         }
 
         if (this.text.endsWith("up I slot") || this.text.endsWith("up 1 slot")){
             this.text = this.text.replace("up I slot",'up 1 slot for you.')
         }
 
+        if (!this.text.endsWith(")") && !this.text.endsWith(".")){
+            this.text = this.text + "."
+        }
     }
 
     hardcodedReplacement(){
@@ -182,18 +194,30 @@ export class Box {
             this.text = "I can redistribute the levels for all effects. Let's see how it shakes out."
         }
 
-        if (this.text.includes("l The flow is not good. I will reset the")){
+        if (this.text.includes("l The flow is not good. I will reset the ") || this.text.includes("l The flow is not good. I will reset the")){
             this.text = "The flow is not good. I will reset the Elixir's effect and levels."
         }
     }
 
     replacesEffect(){
-        if (this.text.includes('.')) {
-            this.text = this.text.split('.')[0];
+        if (!this.text) {
+            this.text = "MP";
+        }
+
+        if (this.text.startsWith(')')) {
+            this.text = this.text.substring(1);
+        }
+        
+        if (this.text.endsWith('.')) {
+            this.text = this.text.slice(0, -1);
         }
 
         if (this.text.endsWith(' ')) {
             this.text = this.text.slice(0, -1);
+        }
+
+        if (this.text.includes('Incoming Damage ..')) {
+            this.text = "Incoming Damage Reduction";
         }
     }
 

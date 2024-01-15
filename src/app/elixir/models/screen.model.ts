@@ -17,11 +17,11 @@ export class ScreenBox {
         ]
         
         this.effects = [
-            new Box(129, 19, 1673, 185), 
-            new Box(129, 19, 1673, 275), 
-            new Box(129, 19, 1673, 365), 
-            new Box(129, 19, 1673, 455), 
-            new Box(129, 19, 1673, 545)
+            new Box(140, 19, 1673, 185), 
+            new Box(140, 19, 1673, 275), 
+            new Box(140, 19, 1673, 365), 
+            new Box(140, 19, 1673, 455), 
+            new Box(140, 19, 1673, 545)
         ]
 
         this.attemptsLeft = new Box(20, 23, 990, 853)
@@ -53,8 +53,30 @@ export class ScreenBox {
 
     updateToAspectRatio(){
         this.sages[0].x +=5
-        this.effects.forEach(x => x.x -= 9)
+        this.effects.forEach(x => x.x -= 7.5)
         this.attemptsLeft = new Box(22, 25, 988, 850)
+    }
+
+    updateToAspectRatio169(){
+        this.sages = [
+            new Box(325, 90, 448, 675), 
+            new Box(325, 90, 790, 675), 
+            new Box(325, 90, 1132, 675)
+        ]
+        
+        this.effects = [
+            new Box(140, 19, 1590, 68), 
+            new Box(140, 19, 1590, 189), 
+            new Box(140, 19, 1590, 310), 
+            new Box(140, 19, 1590, 429), 
+            new Box(140, 19, 1590, 548)
+        ]
+
+        this.attemptsLeft = new Box(22, 25, 998, 956)
+
+        this.effects.forEach((x: any, index: number) => {
+            x.child = new Box(35, 20, 1598, index*x.height + (index* 70.5) + 209)
+        })
     }
 
 }

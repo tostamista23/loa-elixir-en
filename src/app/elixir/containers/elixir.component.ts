@@ -27,7 +27,7 @@ import { LoadingDialogService } from '../services/loading.service';
 })
 export class ElixirComponent implements OnInit {
   isLoading = false;
-  isDev: boolean = false;
+  isDev: boolean = true;
   gameState = api.game.getInitialGameState({ maxEnchant: 10, totalTurn: 14 });
 
   //For detection
@@ -253,21 +253,27 @@ export class ElixirComponent implements OnInit {
   }
 
   loadDetection(file: any){      
-    if (!this.gameScreen.isForced){
-      this.gameScreen.updateToAspectRatio()
-    }
-
     this.loadingService.openDialog();
     this.loadingService.setText("Preparing...");
 
-    updateImage(URL.createObjectURL(file), this.gameScreen.isForced).then((x: {success: boolean, file?: string}) => {
+    updateImage(URL.createObjectURL(file), this.gameScreen.isForced).then((x: {success: boolean, file?: string, aspectratio?: number}) => {
+      this.loadingService.setText("Reading image...");
       if (!x.success || !x.file){
         this.loadingService.closeDialog();
         alert("Image dimensions not supported")
         return;
       }
 
-      this.loadingService.setText("Initializing...");
+      this.loadingService.setText("Updating Aspect Ratio...");
+      this.gameScreen.aspectRatio = x?.aspectratio?.toString() || ""
+
+      if (!this.gameScreen.isForced && this.gameScreen.aspectRatio != "1.77778"){
+        this.gameScreen.updateToAspectRatio()
+      }else if (!this.gameScreen.isForced && this.gameScreen.aspectRatio == "1.77778"){
+        this.gameScreen.updateToAspectRatio169();
+      }
+
+      this.loadingService.setText("Initializing detection...");
       this.detection.start(this.gameScreen, x?.file).then(() => {
         this.loadingService.setText("Updating Effects...");
         this.updateEffects();
@@ -296,7 +302,7 @@ export class ElixirComponent implements OnInit {
 
       if (result.length === 0){
         console.log(box.text);
-        console.log(list.filter(x => x.id == "bg2DjkX7"));
+        console.log(list.filter(x => x.id == "VK+hUWmP"));
         alert("Sage Option: " + box.text + " not found pls contact tostamista (discord)")
         return
       }else if (box.text && result.length !== 1 && result.length <= 10) {

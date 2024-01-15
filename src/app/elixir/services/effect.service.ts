@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ScreenBox } from '../models/screen.model';
 import { CommonService } from './common.service';
-import { GetEffectLevelCoord, GetEffectLevelCoord219 } from '../functions/effectLevel';
+import { GetEffectLevelCoord } from '../functions/effectLevel';
 import { Box } from '../models/box.model';
 
 @Injectable()
@@ -13,7 +13,7 @@ export class EffectService {
         const promises: Promise<void>[] = [];
 
         screen.effects.forEach((box: Box, index:number) => {
-            const effectsPromises = (!screen.isForced ? GetEffectLevelCoord219(box.height, index) : GetEffectLevelCoord(box.height, index)).map(async (x, indexOrb) => {
+            const effectsPromises = GetEffectLevelCoord(box.height, index, screen).map(async (x, indexOrb) => {
                 return new Promise<void>(async (resolve) => {
                     await this.commonService.cutImage(img, x);
 

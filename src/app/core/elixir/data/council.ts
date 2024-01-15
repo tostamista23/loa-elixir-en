@@ -3405,9 +3405,9 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "I will increase a <random> effect by <1> level. Let's see which effect it will be.",
+      "I will increase <1> <random> effect by <1> level. Let's see which effect it will be.",
       "I will increase <1> <random> effect by <1> level.",
-      "I'll increase <1> <random> effect by <1> level."
+      "I will increase <1> <temporary> effect by <1> level. I don't know which effect it will be."
     ],
     slotType: 3,
     type: "common",
@@ -4119,8 +4119,8 @@ export const councils: readonly Council[] = [
       99
     ],
     descriptions: [
-      "I will increase the level of the <{3}> effect by <1>. However, the level of the <{3}> effect will decrease by <1>.",
-      "I'll increase the level of the <{3}> effect by <1>. But the level of the <{3}> effect will decrease by <1>.",
+      "I will increase the level of the <{0}> effect by <1>. However, the level of the <{3}> effect will decrease by <1>.",
+      "I'll increase the level of the <{0}> effect by <1>. But the level of the <{3}> effect will decrease by <1>.",
       "The level of the <{0}> effect will increase by <1>. In exchange, the level of the <{3}> effect will be decreased by <1>."
     ],
     slotType: 3,
@@ -4185,48 +4185,6 @@ export const councils: readonly Council[] = [
         type: "increaseTargetWithRatio",
         targetType: "proposed",
         targetCondition: 5,
-        targetCount: 1,
-        ratio: 10000,
-        value: [
-          -1,
-          0
-        ],
-        remainTurn: 1
-      }
-    ]
-  },
-  {
-    id: "B3RZYuEw",
-    pickRatio: 6000,
-    range: [
-      5,
-      99
-    ],
-    descriptions: [
-      "I will increase the level of the <{1}> effect by <1>. However, the level of the <{1}> effect will decrease by <1>.",
-      "I'll increase the level of the <{1}> effect by <1>. But the level of the <{1}> effect will decrease by <1>.",
-      "The level of the <{1}> effect will increase by <1>. In exchange, the level of the <{1}> effect will be decreased by <1>."
-    ],
-    slotType: 3,
-    type: "common",
-    applyLimit: 99,
-    logics: [
-      {
-        type: "increaseTargetWithRatio",
-        targetType: "proposed",
-        targetCondition: 2,
-        targetCount: 1,
-        ratio: 10000,
-        value: [
-          1,
-          0
-        ],
-        remainTurn: 1
-      },
-      {
-        type: "increaseTargetWithRatio",
-        targetType: "proposed",
-        targetCondition: 1,
         targetCount: 1,
         ratio: 10000,
         value: [
@@ -4322,48 +4280,6 @@ export const councils: readonly Council[] = [
     ]
   },
   {
-    id: "gUpUns5p",
-    pickRatio: 6000,
-    range: [
-      5,
-      99
-    ],
-    descriptions: [
-      "I will increase the level of the <{4}> effect by <1>. However, the level of the <{1}> effect will decrease by <1>.",
-      "I'll increase the level of the <{4}> effect by <1>. But the level of the <{1}> effect will decrease by <1>.",
-      "The level of the <{4}> effect will increase by <1>. In exchange, the level of the <{1}> effect will be decreased by <1>."
-    ],
-    slotType: 3,
-    type: "common",
-    applyLimit: 99,
-    logics: [
-      {
-        type: "increaseTargetWithRatio",
-        targetType: "proposed",
-        targetCondition: 2,
-        targetCount: 1,
-        ratio: 10000,
-        value: [
-          1,
-          0
-        ],
-        remainTurn: 1
-      },
-      {
-        type: "increaseTargetWithRatio",
-        targetType: "proposed",
-        targetCondition: 5,
-        targetCount: 1,
-        ratio: 10000,
-        value: [
-          -1,
-          0
-        ],
-        remainTurn: 1
-      }
-    ]
-  },
-  {
     id: "rSbiyCFy",
     pickRatio: 6000,
     range: [
@@ -4395,48 +4311,6 @@ export const councils: readonly Council[] = [
         type: "increaseTargetWithRatio",
         targetType: "proposed",
         targetCondition: 1,
-        targetCount: 1,
-        ratio: 10000,
-        value: [
-          -1,
-          0
-        ],
-        remainTurn: 1
-      }
-    ]
-  },
-  {
-    id: "FCQnXKMQ",
-    pickRatio: 6000,
-    range: [
-      5,
-      99
-    ],
-    descriptions: [
-      "I will increase the level of the <{2}> effect by <1>. However, the level of the <{1}> effect will decrease by <1>.",
-      "I'll increase the level of the <{2}> effect by <1>. But the level of the <{1}> effect will decrease by <1>.",
-      "The level of the <{2}> effect will increase by <1>. In exchange, the level of the <{1}> effect will be decreased by <1>."
-    ],
-    slotType: 3,
-    type: "common",
-    applyLimit: 99,
-    logics: [
-      {
-        type: "increaseTargetWithRatio",
-        targetType: "proposed",
-        targetCondition: 3,
-        targetCount: 1,
-        ratio: 10000,
-        value: [
-          1,
-          0
-        ],
-        remainTurn: 1
-      },
-      {
-        type: "increaseTargetWithRatio",
-        targetType: "proposed",
-        targetCondition: 2,
         targetCount: 1,
         ratio: 10000,
         value: [
@@ -4563,48 +4437,6 @@ export const councils: readonly Council[] = [
         type: "increaseTargetWithRatio",
         targetType: "proposed",
         targetCondition: 1,
-        targetCount: 1,
-        ratio: 10000,
-        value: [
-          -1,
-          0
-        ],
-        remainTurn: 1
-      }
-    ]
-  },
-  {
-    id: "JvY8DuIr",
-    pickRatio: 6000,
-    range: [
-      5,
-      99
-    ],
-    descriptions: [
-      "I will increase the level of the <{3}> effect by <1>. However, the level of the <{1}> effect will decrease by <1>.",
-      "I'll increase the level of the <{3}> effect by <1>. But the level of the <{1}> effect will decrease by <1>.",
-      "The level of the <{3}> effect will increase by <1>. In exchange, the level of the <{1}> effect will be decreased by <1>."
-    ],
-    slotType: 3,
-    type: "common",
-    applyLimit: 99,
-    logics: [
-      {
-        type: "increaseTargetWithRatio",
-        targetType: "proposed",
-        targetCondition: 4,
-        targetCount: 1,
-        ratio: 10000,
-        value: [
-          1,
-          0
-        ],
-        remainTurn: 1
-      },
-      {
-        type: "increaseTargetWithRatio",
-        targetType: "proposed",
-        targetCondition: 2,
         targetCount: 1,
         ratio: 10000,
         value: [
@@ -5043,9 +4875,9 @@ export const councils: readonly Council[] = [
       99
     ],
     descriptions: [
-      "I will increase the level of the <{0}> effect by <1>. However, the level of the <{1}> effect will decrease by <2>.",
-      "I'll increase the level of the <{0}> effect by <1>. But the level of the <{1}> effect will decrease by <2>.",
-      "The level of the <{0}> effect will increase by <1>. In exchange, the level of the <{1}> effect will be decreased by <2>."
+      "I will increase the level of the <{1}> effect by <1>. However, the level of the <{0}> effect will decrease by <2>.",
+      "I'll increase the level of the <{1}> effect by <1>. But the level of the <{0}> effect will decrease by <2>.",
+      "The level of the <{1}> effect will increase by <1>. In exchange, the level of the <{0}> effect will be decreased by <2>."
     ],
     slotType: 3,
     type: "common",
@@ -5085,9 +4917,9 @@ export const councils: readonly Council[] = [
       99
     ],
     descriptions: [
-      "I will increase the level of the <{2}> effect by <1>. However, the level of the <{1}> effect will decrease by <2>.",
-      "I'll increase the level of the <{2}> effect by <1>. But the level of the <{1}> effect will decrease by <2>.",
-      "The level of the <{2}> effect will increase by <1>. In exchange, the level of the <{1}> effect will be decreased by <2>."
+      "I will increase the level of the <{1}> effect by <1>. However, the level of the <{2}> effect will decrease by <2>.",
+      "I'll increase the level of the <{1}> effect by <1>. But the level of the <{2}> effect will decrease by <2>.",
+      "The level of the <{1}> effect will increase by <1>. In exchange, the level of the <{2}> effect will be decreased by <2>."
     ],
     slotType: 3,
     type: "common",
@@ -5127,9 +4959,9 @@ export const councils: readonly Council[] = [
       99
     ],
     descriptions: [
-      "I will increase the level of the <{3}> effect by <1>. However, the level of the <{1}> effect will decrease by <2>.",
-      "I'll increase the level of the <{3}> effect by <1>. But the level of the <{1}> effect will decrease by <2>.",
-      "The level of the <{3}> effect will increase by <1>. In exchange, the level of the <{1}> effect will be decreased by <2>."
+      "I will increase the level of the <{1}> effect by <1>. However, the level of the <{3}> effect will decrease by <2>.",
+      "I'll increase the level of the <{1}> effect by <1>. But the level of the <{3}> effect will decrease by <2>.",
+      "The level of the <{1}> effect will increase by <1>. In exchange, the level of the <{3}> effect will be decreased by <2>."
     ],
     slotType: 3,
     type: "common",
@@ -5169,9 +5001,9 @@ export const councils: readonly Council[] = [
       99
     ],
     descriptions: [
-      "I will increase the level of the <{4}> effect by <1>. However, the level of the <{1}> effect will decrease by <2>.",
-      "I'll increase the level of the <{4}> effect by <1>. But the level of the <{1}> effect will decrease by <2>.",
-      "The level of the <{4}> effect will increase by <1>. In exchange, the level of the <{1}> effect will be decreased by <2>."
+      "I will increase the level of the <{1}> effect by <1>. However, the level of the <{4}> effect will decrease by <2>.",
+      "I'll increase the level of the <{1}> effect by <1>. But the level of the <{4}> effect will decrease by <2>.",
+      "The level of the <{1}> effect will increase by <1>. In exchange, the level of the <{4}> effect will be decreased by <2>."
     ],
     slotType: 3,
     type: "common",
@@ -7035,9 +6867,9 @@ export const councils: readonly Council[] = [
       6
     ],
     descriptions: [
-      "I'll enhance <1> effect with the <lowest level> by <2> levels. In exchange, however, <one> the <other> effects will lose <2> levels.",
-      "I can increase the level of <1> effect with the <lowest level> by <2>. But this will result in the <one> with the <highest level> losing <2> levels.",
-      "I'll increase <1> effect with the <lowest level> by <2> levels. But <1> effect with the <lowest level> will lose <2> levels."
+      "I'll enhance <1> effect with the <lowest level> by <2> levels. In exchange, however, <one> of the <other> effects will lose <2> levels.",
+      "I can increase the level of <1> effect with the <lowest level> by <2>. But this will result in <one> of the <other> effects losing <2> levels.",
+      "I'll increase <1> effect with the <lowest level> by <2> levels. But <1> <other> effect will lose <2> levels.",
     ],
     slotType: 3,
     type: "common",
@@ -7065,7 +6897,7 @@ export const councils: readonly Council[] = [
       6
     ],
     descriptions: [
-      "I'll enhance <1> effect with the <lowest level> by <2> levels. In exchange, however, one of the <other> effects will lose <1> level.",
+      "I'll enhance <1> effect with the <lowest level> by <2> levels. In exchange, however, <one> of the <other> effects will lose <1> level.",
       "I can increase the level of <1> effect with the <lowest level> by <2>. But this will result in <one> of the <other> effects losing <1> level.",
       "I'll increase <1> effect with the <lowest level> by <2> levels. But <1> <other> effect will lose <1> level.",
     ],
@@ -8773,7 +8605,7 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "I will increase <random> effect by <2> levels. Let's see which effect it will be.",
+      "I will increase <1> <random> effect by <2> levels. Let's see which effect it will be.",
       "I will increase <1> <random effect> by <2> levels.",
       "I will increase <1> <temporary effect> by <2> levels. I don't know which effect it will be."
     ],
@@ -9323,6 +9155,176 @@ export const councils: readonly Council[] = [
         ratio: 0,
         value: [
           0,
+          0
+        ],
+        remainTurn: 1
+      }
+    ]
+  },
+
+  /* later */
+  {
+    id: "gUpUns5p",
+    pickRatio: 6000,
+    range: [
+      5,
+      99
+    ],
+    descriptions: [
+      "I will increase the level of the <{1}> effect by <1>. However, the level of the <{0}> effect will decrease by <1>.",
+      "I'll increase the level of the <{1}> effect by <1>. But the level of the <{0}> effect will decrease by <1>.",
+      "The level of the <{1}> effect will increase by <1>. In exchange, the level of the <{0}> effect will be decreased by <1>."
+    ],
+    slotType: 3,
+    type: "common",
+    applyLimit: 99,
+    logics: [
+      {
+        type: "increaseTargetWithRatio",
+        targetType: "proposed",
+        targetCondition: 2,
+        targetCount: 1,
+        ratio: 10000,
+        value: [
+          1,
+          0
+        ],
+        remainTurn: 1
+      },
+      {
+        type: "increaseTargetWithRatio",
+        targetType: "proposed",
+        targetCondition: 5,
+        targetCount: 1,
+        ratio: 10000,
+        value: [
+          -1,
+          0
+        ],
+        remainTurn: 1
+      }
+    ]
+  },
+    {
+    id: "B3RZYuEw",
+    pickRatio: 6000,
+    range: [
+      5,
+      99
+    ],
+    descriptions: [
+      "I will increase the level of the <{1}> effect by <1>. However, the level of the <{2}> effect will decrease by <1>.",
+      "I'll increase the level of the <{1}> effect by <1>. But the level of the <{2}> effect will decrease by <1>.",
+      "The level of the <{1}> effect will increase by <1>. In exchange, the level of the <{2}> effect will be decreased by <1>."
+    ],
+    slotType: 3,
+    type: "common",
+    applyLimit: 99,
+    logics: [
+      {
+        type: "increaseTargetWithRatio",
+        targetType: "proposed",
+        targetCondition: 2,
+        targetCount: 1,
+        ratio: 10000,
+        value: [
+          1,
+          0
+        ],
+        remainTurn: 1
+      },
+      {
+        type: "increaseTargetWithRatio",
+        targetType: "proposed",
+        targetCondition: 1,
+        targetCount: 1,
+        ratio: 10000,
+        value: [
+          -1,
+          0
+        ],
+        remainTurn: 1
+      }
+    ]
+  },
+    {
+    id: "FCQnXKMQ",
+    pickRatio: 6000,
+    range: [
+      5,
+      99
+    ],
+    descriptions: [
+      "I will increase the level of the <{1}> effect by <1>. However, the level of the <{3}> effect will decrease by <1>.",
+      "I'll increase the level of the <{1}> effect by <1>. But the level of the <{3}> effect will decrease by <1>.",
+      "The level of the <{1}> effect will increase by <1>. In exchange, the level of the <{3}> effect will be decreased by <1>."
+    ],
+    slotType: 3,
+    type: "common",
+    applyLimit: 99,
+    logics: [
+      {
+        type: "increaseTargetWithRatio",
+        targetType: "proposed",
+        targetCondition: 3,
+        targetCount: 1,
+        ratio: 10000,
+        value: [
+          1,
+          0
+        ],
+        remainTurn: 1
+      },
+      {
+        type: "increaseTargetWithRatio",
+        targetType: "proposed",
+        targetCondition: 2,
+        targetCount: 1,
+        ratio: 10000,
+        value: [
+          -1,
+          0
+        ],
+        remainTurn: 1
+      }
+    ]
+  },
+    {
+    id: "JvY8DuIr",
+    pickRatio: 6000,
+    range: [
+      5,
+      99
+    ],
+    descriptions: [
+      "I will increase the level of the <{1}> effect by <1>. However, the level of the <{4}> effect will decrease by <1>.",
+      "I'll increase the level of the <{1}> effect by <1>. But the level of the <{4}> effect will decrease by <1>.",
+      "The level of the <{1}> effect will increase by <1>. In exchange, the level of the <{4}> effect will be decreased by <1>."
+    ],
+    slotType: 3,
+    type: "common",
+    applyLimit: 99,
+    logics: [
+      {
+        type: "increaseTargetWithRatio",
+        targetType: "proposed",
+        targetCondition: 4,
+        targetCount: 1,
+        ratio: 10000,
+        value: [
+          1,
+          0
+        ],
+        remainTurn: 1
+      },
+      {
+        type: "increaseTargetWithRatio",
+        targetType: "proposed",
+        targetCondition: 2,
+        targetCount: 1,
+        ratio: 10000,
+        value: [
+          -1,
           0
         ],
         remainTurn: 1
