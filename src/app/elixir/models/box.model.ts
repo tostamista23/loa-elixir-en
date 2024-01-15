@@ -138,7 +138,8 @@ export class Box {
             ["selected [","selected by ["],
             ["+2)", "+2]"],
             ["2- +", "2 - +"],
-            ["mn ete ", "I'll change "]
+            ["mn ete ", "I'll change "],
+            ["t's ", "It's "]
         ];
 
         for (const [pattern, replacement] of toReplace) {
@@ -187,7 +188,11 @@ export class Box {
     }
 
     replacesEffect(){
-        if (this.text.endsWith('.')) {
+        if (this.text.includes('.')) {
+            this.text = this.text.split('.')[0];
+        }
+
+        if (this.text.endsWith(' ')) {
             this.text = this.text.slice(0, -1);
         }
     }
