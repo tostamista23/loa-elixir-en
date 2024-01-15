@@ -27,7 +27,7 @@ import { LoadingDialogService } from '../services/loading.service';
 })
 export class ElixirComponent implements OnInit {
   isLoading = false;
-  isDev: boolean = true;
+  isDev: boolean = false;
   gameState = api.game.getInitialGameState({ maxEnchant: 10, totalTurn: 14 });
 
   //For detection
