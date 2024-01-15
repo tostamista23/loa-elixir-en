@@ -71,7 +71,6 @@ export class Box {
             ["I'l ","I'll "],
             ["Bis of Life", "Blessing of Life"],
             [" sal "," seal "],
-            [" 4", ""],
             ["Let’ ", "Let's "],
             ["it now,", "it now."],
             ["1¢s", "It's"],
@@ -146,7 +145,7 @@ export class Box {
             ["effect 2 levels", "effect by 2 levels"],
             ["by[", "by ["],
             ["by2", "by 2"],
-            ["|[", "["],
+            ["|[", "["]
         ];
 
         for (const [pattern, replacement] of toReplace) {
@@ -202,6 +201,10 @@ export class Box {
     replacesEffect(){
         if (!this.text) {
             this.text = "MP";
+        }
+
+        if (this.text.startsWith('‘')) {
+            this.text = this.text.substring(1);
         }
 
         if (this.text.startsWith(')')) {
