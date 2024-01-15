@@ -2,19 +2,19 @@ const originalWidth = 1920
 const originalHeight = 1080
 
 
-export function updateImage(file: string, isForced: boolean): Promise<{success: boolean, file?: string}> {
+export function updateImage(file: string, isForced: boolean): Promise<{success: boolean, file?: string, aspectratio?: number}> {
     return new Promise((resolve, reject) => {
-        isImageSupported(file).then(x  => {
-            if (!x?.success) 
+        isImageSupported(file).then(res  => {
+            if (!res?.success) 
                 resolve({success: false})
             
             //its the same as original, doesnt do anything
-            if (isForced && x.img.width == originalWidth && x.img.height == originalHeight){
-                resolve({success: true, file: file})
+            if (isForced && res.img.width == originalWidth && res.img.height == originalHeight){
+                resolve({success: true, file: file, aspectratio: res.aspectratio})
             }else if (isForced){
-                resolve({success: true, file: downscaleImage(x.img)})
+                resolve({success: true, file: downscaleImage(res.img), aspectratio: res.aspectratio})
             }else{
-                transformImageTo21by9AndDownscale(x.img).then(x => resolve({success: true, file: x}))
+                transformImageTo21by9AndDownscale(res.img).then(x => resolve({success: true, file: x, aspectratio: res.aspectratio}))
             }
 
         });
@@ -22,12 +22,12 @@ export function updateImage(file: string, isForced: boolean): Promise<{success: 
 }
 
 
-export function isImageSupported(file: any): Promise<{success: boolean, img: HTMLImageElement}> {
+export function isImageSupported(file: any): Promise<{success: boolean, img: HTMLImageElement, aspectratio: number}> {
     return new Promise((resolve, reject) => {
         getImageDimensionsFromURL(file).then((x: HTMLImageElement) => {
-            const aspectRation = Math.round(x.width/x.height * 100000)/100000;
+            const aspectRatio = Math.round(x.width/x.height * 100000)/100000;
 
-            resolve({success: x.width >= originalWidth && x.height >= originalHeight && (aspectRation == 1.77778 || aspectRation == 2.38889), img: x});
+            resolve({success: x.width >= originalWidth && x.height >= originalHeight && (aspectRatio == 1.77778 || aspectRatio == 2.38889), img: x, aspectratio: aspectRatio});
         })
     });
 }
