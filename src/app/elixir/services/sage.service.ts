@@ -19,7 +19,7 @@ export class SageService {
         const promises: Promise<void>[] = [];
 
         screen.sages.forEach((box: Box, index: number) => {
-            const chaosCoordPromises = GetChaosCoord(box.width, index).map(async (x, indexOrb) => {
+            const chaosCoordPromises = GetChaosCoord(box.width, index, screen).map(async (x, indexOrb) => {
                 return new Promise<void>(async (resolve) => {
                     await this.commonService.cutImage(img, x);
 
@@ -41,8 +41,8 @@ export class SageService {
                         const middlePixelColor = this.commonService.getMiddlePixelColor(canvas);
                 
                         if (middlePixelColor) {
-                            x.text = this.getTypeSage([middlePixelColor[0],middlePixelColor[1],middlePixelColor[2]]);
-                            //console.log(x.text, index,indexOrb, x.image);
+                            x.text = this.getTypeSage([middlePixelColor[0],middlePixelColor[1],middlePixelColor[2]], 'chaos');
+                            console.log(x.text, index,indexOrb, x.image);
                             if (x.text !== "not found"){
                                 box.children?.push(x);
                             }
@@ -78,7 +78,7 @@ export class SageService {
         sagesIndex.map((index: number) => {
             screen.sages[index].children = [];
 
-            promises.push(...GetLawfulCoord(screen.sages[index].width, index, !screen.isForced ? -10 : 0).map(async (x, indexOrb) => {
+            promises.push(...GetLawfulCoord(screen.sages[index].width, index,screen, -index-1).map(async (x, indexOrb) => {
 
                 return new Promise<void>(async (resolve, reject) => {
                     await this.commonService.cutImage(img, x)
@@ -101,9 +101,12 @@ export class SageService {
                         const middlePixelColor = this.commonService.getMiddlePixelColor(canvas);
                 
                         if (middlePixelColor) {
-                            x.text = this.getTypeSage([middlePixelColor[0],middlePixelColor[1],middlePixelColor[2]]);
+                            x.text = this.getTypeSage([middlePixelColor[0],middlePixelColor[1],middlePixelColor[2]], 'lawful');
                             console.log(x.text, index, indexOrb, x.image);
-                            screen.sages[index].children?.push(x);
+                            if (x.text != "not found"){
+                                console.log(x.text, index, indexOrb, x.image);
+                                screen.sages[index].children?.push(x);
+                            }
                         }
 
                         resolve();
@@ -116,27 +119,36 @@ export class SageService {
         await Promise.all(promises);
     }
 
-    getTypeSage(pixel: [number, number, number], threshold: number = 30): string | null {
+    getTypeSage(pixel: [number, number, number], type: string): string | null {
         const [red, green, blue] = pixel;
     
         // Define thresholds for purple, blue, and black
-        const purpleThreshold = 200;
-        const blueThreshold = 100;
-        const blackThreshold = 40;
-        
+        const purpleThreshold = 70;
+        const blackThreshold = 50;
+
         // Define the specific blue color
         const specificBlue: [number, number, number] = [197, 247, 254]; // RGB value for #C5F7FE
         const specificPurple: [number, number, number] = [255, 217, 255]; // RGB value for #C5F7FE
 
-        // Check if it's more likely to be purple, blue, black, or none of them based on color intensities
-        const isPurple = this.commonService.isColorInRange([red, green, blue], specificPurple, purpleThreshold);
-        const isBlue = (blue > blueThreshold && red < blueThreshold && green < blueThreshold) || this.commonService.isColorInRange([red, green, blue], specificBlue, threshold);
+        let isPurple = false;
+        let isBlue = false;
+
+        // Check if it's more likely to be purple, blue, black, or none of them based on color intensities~
+        if (type == "lawful"){
+            isBlue = this.commonService.isColorInRange([red, green, blue], specificBlue, 70);
+
+        }
+
+        if (type == "chaos"){
+            isPurple = this.commonService.isColorInRange([red, green, blue], specificPurple, purpleThreshold);
+        }
+
         const isBlack = red < blackThreshold && green < blackThreshold && blue < blackThreshold;
     
-        if (isPurple) {
-            return 'chaos';
-        } else if (isBlue) {
+        if (isBlue) {
             return 'lawful';
+        } else if (isPurple) {
+            return 'chaos';
         } else if (isBlack) {
             return 'empty';
         } else {

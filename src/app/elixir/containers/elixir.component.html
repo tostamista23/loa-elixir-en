@@ -89,6 +89,7 @@
                 *ngFor="let effe of gameScreen.effects; index as i"
               >
                 <mat-card-content style="display:flex">
+                  <img [src]="effe?.child?.image">
                   <img [src]="effe.image">
                   <div *ngFor="let c of effe.children" class="mr-8">
                     <img [src]="c.image">

@@ -5720,6 +5720,36 @@ export const councils: readonly Council[] = [
     ]
   },
   {
+    id: "10+sg9qJ",
+    pickRatio: 18000,
+    range: [
+      0,
+      0
+    ],
+    descriptions: [
+      "I will swap the levels of the <{1}> effect and the <{0}> effect.",
+      "I will swap the levels of the <{1}> effect and the <{0}> effect.",
+      "I will swap the levels of the <{1}> effect and the <{0}> effect.",
+    ],
+    slotType: 3,
+    type: "common",
+    applyLimit: 99,
+    logics: [
+      {
+        type: "swapValues",
+        targetType: "none",
+        targetCondition: 0,
+        targetCount: 1,
+        ratio: 0,
+        value: [
+          1,
+          0
+        ],
+        remainTurn: 1
+      }
+    ]
+  },
+  {
     id: "Te+sg9qJ",
     pickRatio: 18000,
     range: [
@@ -5727,9 +5757,9 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "I will swap the levels of the <{2}> effect and the <{1}> effect.",
-      "I will swap the levels of the <{2}> effect and the <{1}> effect.",
-      "I will swap the levels of the <{2}> effect and the <{1}> effect.",
+      "I will swap the levels of the <{1}> effect and the <{2}> effect.",
+      "I will swap the levels of the <{1}> effect and the <{2}> effect.",
+      "I will swap the levels of the <{1}> effect and the <{2}> effect.",
     ],
     slotType: 3,
     type: "common",
@@ -5757,9 +5787,9 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "I will swap the levels of the <{3}> effect and the <{1}> effect.",
-      "I will swap the levels of the <{3}> effect and the <{1}> effect.",
-      "I will swap the levels of the <{3}> effect and the <{1}> effect.",
+      "I will swap the levels of the <{1}> effect and the <{3}> effect.",
+      "I will swap the levels of the <{1}> effect and the <{3}> effect.",
+      "I will swap the levels of the <{1}> effect and the <{3}> effect.",
     ],
     slotType: 3,
     type: "common",
@@ -5787,9 +5817,9 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "I will swap the levels of the <{4}> effect and the <{1}> effect.",
-      "I will swap the levels of the <{4}> effect and the <{1}> effect.",
-      "I will swap the levels of the <{4}> effect and the <{1}> effect.",
+      "I will swap the levels of the <{1}> effect and the <{4}> effect.",
+      "I will swap the levels of the <{1}> effect and the <{4}> effect.",
+      "I will swap the levels of the <{1}> effect and the <{4}> effect.",
     ],
     slotType: 3,
     type: "common",
@@ -6117,9 +6147,9 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "I will consume <1> level of the <{3}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{2}> effect.",
-      "I will consume <1> level of the <{3}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{2}> effect.",
-      "I will consume <1> level of the <{3}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{2}> effect."
+      "I will consume <1> level of the <{3}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{3}> effect.",
+      "I will consume <1> level of the <{3}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{3}> effect.",
+      "I will consume <1> level of the <{3}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{3}> effect."
     ],
     slotType: 3,
     type: "common",
@@ -6147,9 +6177,9 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "I will consume <1> level of the <{4}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{2}> effect.",
-      "I will consume <1> level of the <{4}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{2}> effect.",
-      "I will consume <1> level of the <{4}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{2}> effect."
+      "I will consume <1> level of the <{4}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{4}> effect.",
+      "I will consume <1> level of the <{4}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{4}> effect.",
+      "I will consume <1> level of the <{4}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{4}> effect."
     ],
     slotType: 3,
     type: "common",
@@ -6237,9 +6267,9 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "I will consume <1> level of the <{0}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{2}> effect.",
-      "I will consume <1> level of the <{0}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{2}> effect.",
-      "I will consume <1> level of the <{0}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{2}> effect."
+      "I will consume <1> level of the <{0}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{0}> effect.",
+      "I will consume <1> level of the <{0}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{0}> effect.",
+      "I will consume <1> level of the <{0}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{0}> effect."
     ],
     slotType: 3,
     type: "common",
@@ -6327,9 +6357,9 @@ export const councils: readonly Council[] = [
       0
     ],
     descriptions: [
-      "I will consume <1> level of the <{1}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{2}> effect.",
-      "I will consume <1> level of the <{1}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{2}> effect.",
-      "I will consume <1> level of the <{1}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{2}> effect."
+      "I will consume <1> level of the <{1}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{1}> effect.",
+      "I will consume <1> level of the <{1}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{1}> effect.",
+      "I will consume <1> level of the <{1}> effect. In Exchange for that, I will swap the levels of the <{2}> effect and the <{1}> effect."
     ],
     slotType: 3,
     type: "common",
