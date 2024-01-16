@@ -51,7 +51,7 @@ export class ScreenBox {
         }
     }
 
-    updateToAspectRatio(){
+    updateToAspectRatio219(){
         this.sages[0].x +=5
         this.effects.forEach(x => x.x -= 7.5)
         this.attemptsLeft = new Box(22, 25, 987, 848)
@@ -75,7 +75,7 @@ export class ScreenBox {
         this.attemptsLeft = new Box(22, 25, 998, 956)
 
         this.effects.forEach((x: any, index: number) => {
-            x.child = new Box(35, 20, 1598, index*x.height + (index* 70.5) + 209)
+            x.child = new Box(45, 20, 1490, index*x.height + (index* 102.5) + 97)
         })
     }
 

@@ -1,11 +1,23 @@
 
 import { Box } from '../models/box.model';
 import { data, GameState } from 'src/app/core/elixir';
+import { ScreenBox } from '../models/screen.model';
 
-export function  GetChaosCoord(width: number, index: number, addToWidth = 0): Box[] {
+export function  GetChaosCoord(width: number, index: number, screen: ScreenBox, addToWidth = 0): Box[] {
+
+    if (!screen.isForced && screen.aspectRatio == "1.77778"){
+        return [
+            new Box(32,32,GetWidthBySageIndex(width, index, 474), 618), 
+            new Box(32,32,GetWidthBySageIndex(width, index, 520), 618), 
+            new Box(32,32,GetWidthBySageIndex(width, index, 568), 618), 
+            new Box(32,32,GetWidthBySageIndex(width, index, 616), 618), 
+            new Box(32,32,GetWidthBySageIndex(width, index, 666), 618),
+            new Box(32,32,GetWidthBySageIndex(width, index, 714), 618)
+        ]
+    }
+
     return [
-        //TODO height games with no black bars -134
-        new Box(32,32,GetWidthBySageIndex(width, index, 590), 598), 
+        new Box(320,320,GetWidthBySageIndex(width, index, 590), 598), 
         new Box(32,32,GetWidthBySageIndex(width, index, 626), 598), 
         new Box(32,32,GetWidthBySageIndex(width, index, 664), 598), 
         new Box(32,32,GetWidthBySageIndex(width, index, 700), 598), 
@@ -14,7 +26,16 @@ export function  GetChaosCoord(width: number, index: number, addToWidth = 0): Bo
     ]
 }
 
-export function GetLawfulCoord(width: number, index: number, addToWidth = 0): Box[] {
+export function GetLawfulCoord(width: number, index: number,screen: ScreenBox, addToWidth = 0): Box[] {
+
+    if (!screen.isForced && screen.aspectRatio == "1.77778"){
+        return [
+            new Box(32,32,GetWidthBySageIndex(width, index, 528 + addToWidth),618), 
+            new Box(32,32,GetWidthBySageIndex(width, index, 592 + addToWidth),618), 
+            new Box(32,32,GetWidthBySageIndex(width, index, 662 + addToWidth),618)
+        ]
+    }
+
     return [
         new Box(32,32,GetWidthBySageIndex(width, index, 634 + addToWidth),598), 
         new Box(32,32,GetWidthBySageIndex(width, index, 682 + addToWidth),598), 
@@ -22,8 +43,12 @@ export function GetLawfulCoord(width: number, index: number, addToWidth = 0): Bo
     ]
 }
 
-function GetWidthBySageIndex(width: number, index: number, value: number): number {
-    return (index)*width + (index*19.5) + value
+function GetWidthBySageIndex(width: number, index: number, value: number,): number {
+    return (index)*width + (index*19.4) + value
+}
+
+function GetWidthBySageIndex169(width: number, index: number, value: number,): number {
+    return (index)*width + (index*29.4) + value
 }
 
 export function GetAllCouncils(gameState: GameState) {

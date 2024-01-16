@@ -268,7 +268,7 @@ export class ElixirComponent implements OnInit {
       this.gameScreen.aspectRatio = x?.aspectratio?.toString() || ""
 
       if (!this.gameScreen.isForced && this.gameScreen.aspectRatio != "1.77778"){
-        this.gameScreen.updateToAspectRatio()
+        this.gameScreen.updateToAspectRatio219()
       }else if (!this.gameScreen.isForced && this.gameScreen.aspectRatio == "1.77778"){
         this.gameScreen.updateToAspectRatio169();
       }
@@ -292,9 +292,12 @@ export class ElixirComponent implements OnInit {
     const list: {id: string,sage: number, desc: string, canExhaust: boolean}[] = GetAllCouncils(this.gameState);
     this.gameScreen.sages.forEach((box:Box, index: number) => {
 
+      const chaos = box.children?.filter(x => x.text == "chaos")
+      const lawful = box.children?.filter(x => x.text == "lawful")
+
       this.setTypePower(index, { 
-        type: box.children?.length === MAX_LAWFUL ? 'lawful' : box.children?.length === MAX_CHAOS ? 'chaos' : 'none', 
-        power: box.children?.filter(x => x.text === 'lawful' || x.text === 'chaos').length || 0 
+        type: chaos?.length != 0 ? 'chaos' : lawful?.length !=0 ? 'lawful' : 'none', 
+        power: chaos?.length || lawful?.length || 0 
     });
 
       box.replacesSages();
@@ -302,7 +305,7 @@ export class ElixirComponent implements OnInit {
 
       if (result.length === 0){
         console.log(box.text);
-        console.log(list.filter(x => x.id == "VK+hUWmP"));
+        console.log(list.filter(x => x.id == "6CvFcBRK"));
         alert("Sage Option: " + box.text + " not found pls contact tostamista (discord)")
         return
       }else if (box.text && result.length !== 1 && result.length <= 10) {

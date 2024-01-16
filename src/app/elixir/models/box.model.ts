@@ -90,7 +90,6 @@ export class Box {
             ["troublesome I will ", "troublesome. I will "],
             ["I will set ", "I will reset "],
             ["reamining", "remaining"],
-            ["all remaining transmutation.", "all remaining transmutations."],
             ["[4-45]","[-4-+5]"],
             ["I'lincrease", "I'll increase"],
             ["| will", "I will"],
@@ -145,11 +144,53 @@ export class Box {
             ["effect 2 levels", "effect by 2 levels"],
             ["by[", "by ["],
             ["by2", "by 2"],
-            ["|[", "["]
+            ["|[", "["],
+            ["llincrease", "I'll increase"],
+            ["I1lincrease", "I'll increase"],
+            ["effectby", "effect by"],
+            [" I 2-42", " [-2 - +2]"],
+            ["Atk,", "Atk."],
+            ["Ican", "I can"],
+            ["|can", "I can"],
+            ["(-2", "[-2"],
+            ["si Expert", "Escape Expert"],
+            ["oi Expert", "Escape Expert"],
+            ["IIt's", "It's"],
+            [" Si ", " 5% "],
+            ["[I'll", "I'll"],
+            ["Fvasion", "Evasion"],
+            ["by 1t", "by 1."],
+            [". will", ". It will"],
+            ["Itwill", "It will"],
+            ["between -2 - +2", "between [-2 - +2]"],
+            ["the i Expert", "the Escape Expert"],
+            ["all remaining transmutation,", "all remaining transmutations."],
+            [" scape Expert", " Escape Expert"],
+            [" 20 less", " 20% less"],
+            [" Tvasion", " Evasion"],
+            ["by level", "by 1 level"],
+            ["Lxpert", "Expert"],
+            ["hetween", "between"],
+            ["down | slot", "down 1 slot"],
+            ["up | slot", "up 1 slot"],
+            ["down I slot", "down 1 slot"],
+            ["up I slot", "up I slot"],
+            [" 2,4 ", " 2, 4 "],
+            ["grat ", "great "],
+            ["by[", "by ["],
+            ["by[", "by ["],
+            ["[inc", "I'll inc"],
+            ["SuCcess", "success"],
+            [" thas", " It has"],
+            [".It", ". It"]
         ];
 
         for (const [pattern, replacement] of toReplace) {
             this.text = this.text.replace(pattern, replacement);
+        }
+
+        if (this.text.startsWith("will")){
+            this.text = "I " + this.text
         }
 
         if (this.text.startsWith("will")){
@@ -203,6 +244,10 @@ export class Box {
             this.text = "MP";
         }
 
+        if (this.text.includes(',')) {
+            this.text = this.text.replace(",",".");
+        }
+
         if (this.text.startsWith('‘')) {
             this.text = this.text.substring(1);
         }
@@ -221,6 +266,10 @@ export class Box {
 
         if (this.text.includes('Incoming Damage ..')) {
             this.text = "Incoming Damage Reduction";
+        }
+
+        if (this.text == 'Incoming Damag') {
+            this.text = "Incoming Damage";
         }
     }
 
