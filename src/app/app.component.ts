@@ -1,7 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, Inject, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { MobileDialogComponent } from './core/components/mobile-dialog.component';
 
 @Component({
   selector: 'app-root',
@@ -21,9 +20,6 @@ export class AppComponent implements OnInit {
     }
     if (theme === 'dark') {
       this.darkTheme();
-    }
-    if (this.isMobile()) {
-      this.dialog.open(MobileDialogComponent);
     }
   }
 

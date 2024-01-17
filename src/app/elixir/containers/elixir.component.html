@@ -104,7 +104,7 @@
       
     </div>
     <div class="w-100 p-24 pr-0 pt-0 align-center">
-      <mat-checkbox class="mb-12" [(ngModel)]="gameScreen.isForced"><b>Force 21:9 Aspect Ratio (black bars)</b></mat-checkbox>
+      <mat-checkbox class="mb-12" [(ngModel)]="gameScreen.isForced" (ngModelChange)="saveLS()"><b>Force 21:9 Aspect Ratio (black bars)</b></mat-checkbox>
       <div class="box h-100">
         <div (paste)="onPaste($event)" (dblclick)="file.click()" (dragover)="onDragOver($event)" (drop)="onDrop($event)" contenteditable="true" class="image-container">
           <p>Press (CTRL + V), Double Click or <br>drag and drop an image</p>

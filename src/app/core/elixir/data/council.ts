@@ -7504,7 +7504,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "All future creations will cost you <20%> less.",
-      "All remaining transmutations will cost you <20%> less.",
+      "All remaining transmutations will cost <20%> less.",
       "All future creations will cost you <20%> less."
     ],
     slotType: 3,
@@ -7534,7 +7534,7 @@ export const councils: readonly Council[] = [
     ],
     descriptions: [
       "All future creations will cost you <40%> less.",
-      "All remaining transmutations creations will cost you <40%> less.",
+      "All remaining transmutations will cost <40%> less.",
       "All future creations will cost you <40%> less."
     ],
     slotType: 3,

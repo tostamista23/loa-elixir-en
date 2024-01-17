@@ -182,7 +182,18 @@ export class Box {
             ["[inc", "I'll inc"],
             ["SuCcess", "success"],
             [" thas", " It has"],
-            [".It", ". It"]
+            [".It", ". It"],
+            [" 25 ", " 25% "],
+            ["| 2-4", "[-2 - +2]"],
+            ["levels, But", "levels. But"],
+            ["by 1, It", "by 1. It"],
+            ["by -2 - +2]", "by [-2 - +2]"],
+            ["[ will", "I will"],
+            [" Leffect", " effect"],
+            ["Other Aci]", "Other Advice by 1"],
+            ["levels of effect", "levels of 1 effect"],
+            ["tines", "times"],
+            [" todas ", " Intelligence "]
         ];
 
         for (const [pattern, replacement] of toReplace) {
