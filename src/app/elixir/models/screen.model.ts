@@ -24,7 +24,7 @@ export class ScreenBox {
             new Box(140, 19, 1673, 545)
         ]
 
-        this.attemptsLeft = new Box(20, 23, 990, 853)
+        this.attemptsLeft = new Box(21, 25, 990, 850)
 
         this.addSealtoChild();
     }

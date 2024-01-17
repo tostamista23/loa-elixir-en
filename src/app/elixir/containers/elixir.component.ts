@@ -60,6 +60,7 @@ export class ElixirComponent implements OnInit {
       this.updateScores();
       this.isLoading = false;
     });
+    this.getLS();
   }
 
   get pickRatios() {
@@ -306,7 +307,7 @@ export class ElixirComponent implements OnInit {
       if (result.length === 0){
         console.log(box.text);
         console.log(list.filter(x => x.id == "6CvFcBRK"));
-        alert("Sage Option: " + box.text + " not found pls contact tostamista (discord)")
+        alert("WIP Sage Option: " + box.text + " not found. Do it manually")
         return
       }else if (box.text && result.length !== 1 && result.length <= 10) {
         console.log(box.text);
@@ -326,7 +327,7 @@ export class ElixirComponent implements OnInit {
 
       let result = data.effectOptions.find((x) => x.name.toLocaleLowerCase() == box.text.toLocaleLowerCase());
     
-      !result ? alert("Effect Option: " + box.text + " not found pls contact tostamista (discord)") : this.gameState.effects[index].optionName = result.name
+      !result ? alert("WIP Effect Option: " + box.text + " not found. Do it manually") : this.gameState.effects[index].optionName = result.name
 
       this.setEffectValue(index ,box.value)
 
@@ -344,7 +345,7 @@ export class ElixirComponent implements OnInit {
     const match = this.gameScreen.attemptsLeft.text.match(regex);
 
     if ((match ? match[0] : null) === null){
-      alert("Remaining attemps invalid");
+      alert("Remaining attemps invalid. Do it manually");
       return;
     }
 
@@ -492,6 +493,14 @@ export class ElixirComponent implements OnInit {
   updateCouncil(index: number, id: string, canExhaust?: boolean) {
     this.setCouncil(index, id)
     this.gameState.sages[index].isExhausted = canExhaust || false
+  }
+
+  saveLS() {
+    localStorage.setItem('force219', this.gameScreen.isForced.toString())
+  }
+
+  getLS() {
+    this.gameScreen.isForced = localStorage.getItem('force219') == 'true'
   }
 
   reset() {
